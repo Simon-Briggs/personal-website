@@ -18,7 +18,7 @@ console.log('`About` component loaded asynchronously');
   template: `
   <md-card>
     <h1>
-      patrick@AngularClass.com
+      Contact me: simonbriggs@ymail.com
     </h1>
   </md-card>
 

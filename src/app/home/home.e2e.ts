@@ -12,9 +12,9 @@ describe('App', () => {
     expect(subject).toEqual(result);
   });
 
-  it('should have `your content here` x-large', () => {
+  it('should have `Simon Briggs` x-large', () => {
     let subject = element(by.css('[x-large]')).getText();
-    let result  = 'Your Content Here';
+    let result  = 'Simon Briggs';
     expect(subject).toEqual(result);
   });
 
