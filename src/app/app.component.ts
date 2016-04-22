@@ -20,46 +20,9 @@ import {RouterActive} from './router-active';
   encapsulation: ViewEncapsulation.None,
   styles: [
     require('normalize.css'),
-    `
-    md-toolbar ul {
-      display: inline;
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-      width: 60px;
-    }
-    md-toolbar li {
-      display: inline;
-    }
-    md-toolbar li.active {
-      background-color: lightgray;
-    }
-  `],
-  template: `
-    <header>
-      <md-toolbar color="primary">
-        <nav>
-          <ul>
-            <li router-active>
-              <a [routerLink]=" ['Index'] ">Home</a>
-            </li>
-            |
-            <li router-active>
-              <a [routerLink]=" ['About'] ">About</a>
-            </li>
-          </ul>
-        </nav>
-      </md-toolbar>
-    </header>
-
-    <main>
-      <router-outlet></router-outlet>
-    </main>
-
-    <footer>
-      Copyright 2016
-    </footer>
-  `
+    require('./app.css'),
+   ],
+  template: require('./app.html')
 })
 @RouteConfig([
   { path: '/',      name: 'Index', component: Home, useAsDefault: true },
@@ -78,11 +41,3 @@ export class App {
   }
 
 }
-
-/*
- * Please review the https://github.com/AngularClass/angular2-examples/ repo for
- * more angular app examples that you may copy/paste
- * (The examples may not be updated as quickly. Please open an issue on github for us to update it)
- * For help or questions please contact us at @AngularClass on twitter
- * or our chat on Slack at https://AngularClass.com/slack-join
- */
