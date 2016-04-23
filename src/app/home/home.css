@@ -24,3 +24,31 @@
     display: flex;
     flex-flow: row wrap;
 }
+
+md-card { 
+	animation-name: skew;
+	animation-duration: 1s;
+} 
+ 
+@keyframes skew {
+	from {
+		-webkit-transform: skewX(25deg) skewY(20deg);
+		-moz-transform: skewX(25deg) skewY(20deg);
+		-ms-transform: skewX(25deg) skewY(20deg);
+		-o-transform: skewX(25deg) skewY(20deg);
+		transform: skewX(25deg) skewY(20deg);
+		opacity: 0;
+	}
+	to {
+		-webkit-transform: skewX(0deg) skewY(0deg);
+		-moz-transform: skewX(0deg) skewY(0deg);
+		-ms-transform: skewX(0deg) skewY(0deg);
+		-o-transform: skewX(0deg) skewY(0deg);
+		transform: skewX(0deg) skewY(0deg);
+		opacity: 1;
+	}
+}
+
+.slanted-image {
+  transform: translateZ(.4px) scale(.6) translateX(-104%) translateY(-40%) rotate(-5deg);
+}

@@ -1,9 +1,9 @@
 {
-  "name": "angular2-webpack-starter",
+  "name": "personal-website",
   "version": "5.0.4",
-  "description": "An Angular 2 Webpack Starter kit featuring Angular 2 (Router, Http, Forms, Services, Tests, E2E, Coverage), Karma, Protractor, Jasmine, Istanbul, TypeScript, and Webpack by AngularClass",
-  "author": "Patrick Stapleton <patrick@angularclass.com>",
-  "homepage": "https://github.com/angularclass/angular2-webpack-starter",
+  "description": "A simple personal website",
+  "author": "Simon Briggs",
+  "homepage": "simonbriggs.website",
   "license": "MIT",
   "scripts": {
     "rimraf": "rimraf",
@@ -120,10 +120,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/angularclass/angular2-webpack-starter.git"
+    "url": "https://github.com/Simon-Briggs/personal-website.git"
   },
   "bugs": {
-    "url": "https://github.com/angularclass/angular2-webpack-starter/issues"
+    "url": "https://github.com/Simon-Briggs/personal-website/issues"
   },
   "engines": {
     "node": ">= 4.2.1",

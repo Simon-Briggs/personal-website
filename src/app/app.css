@@ -6,6 +6,11 @@ html, body {
 .content-wrapper {
     min-height: 100%;
     position: relative;
+    background-image: url("/assets/img/bg.jpg");
+    background-size: cover;
+    width:100%;
+    filter: blur(5px) brightness(0.5);
+    background-attachment: fixed;  
 }
 .nav-links {
     margin: auto;
@@ -19,6 +24,7 @@ html, body {
     bottom: 0;
     height:48px;
     text-align: center;
+    opacity: 0.8;
     background-color: antiquewhite;
 }
 @media (max-width: 450px) {
