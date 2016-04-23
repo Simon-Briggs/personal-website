@@ -2,3 +2,13 @@
 	width: 80%;
 	margin: 24px auto 24px auto;
 }
+
+@media (max-width:500px) {
+	.s-card {
+		width: 100%;
+	}
+	.large-only {
+		display: none;
+		opacity: 0;
+	}
+}

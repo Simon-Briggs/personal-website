@@ -21,12 +21,13 @@ html, body {
     text-align: center;
     background-color: antiquewhite;
 }
-@media (max-width: 350px) {
+@media (max-width: 450px) {
     .body {
-        margin-bottom: -64px
+        padding-bottom: 68px;
     }
     .footer {
-        height: 68px;
+        height: 62px;
+        padding-top: 10px;
         overflow:hidden;
     }
 }

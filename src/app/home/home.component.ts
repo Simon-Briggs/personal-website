@@ -19,15 +19,47 @@ import {XLarge} from './x-large';
     XLarge
   ],
   // We need to tell Angular's compiler which custom pipes are in our template.
-  pipes: [ ],
+  pipes: [],
   // Our list of styles in our component. We may add more to compose many styles together
-  styles: [ require('./home.css') ],
+  styles: [require('./home.css')],
   // Every Angular template is first compiled by the browser before Angular runs it's compiler
   template: require('./home.html')
 })
 export class Home {
   // Set our default values
   localState = { value: '' };
+  educationList = [{
+    name: "IBM",
+    location: "UK",
+    startDate: 2012,
+    duration: 4
+  }, {
+      name: "Waseda University",
+      location: "Tokyo, Japan",
+      startDate: 2010,
+      duration: 1
+    }, {
+      name: "Nottingham University",
+      location: "UK",
+      startDate: 2009,
+      duration: 3
+    }];
+  todos = [{
+    who: "IBM",
+    face: "UK",
+    startDate: 2012,
+    duration: 4
+  }, {
+      who: "Waseda University",
+      face: "Tokyo, Japan",
+      startDate: 2010,
+      duration: 1
+    }, {
+      who: "Nottingham University",
+      face: "UK",
+      startDate: 2009,
+      duration: 3
+    }];
   // TypeScript public modifiers
   constructor(public appState: AppState, public title: Title) {
 

@@ -18,10 +18,21 @@ console.log('`About` component loaded asynchronously');
   template: `
   <md-card>
     <h1>
-      Contact me: simonbriggs@ymail.com
+      Contact me: <a href="mailto:simonbriggs@ymail.com?subject=simonbriggs.website">simonbriggs@ymail.com</a>
     </h1>
   </md-card>
 
+  <md-card class="s-card">
+    <md-card-content>
+      <span x-large>Send me a message:</span>
+
+      <form (ngSubmit)="submitState(localState.value)" autocomplete="off">
+        <md-input placeholder="Send me a message" [(ngModel)]="localState.value" autofocus></md-input>
+        <button md-raised-button color="primary">Submit</button>
+      </form>
+
+    </md-card-content>
+  </md-card>
   `
 })
 export class About {
