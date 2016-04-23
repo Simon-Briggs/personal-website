@@ -3,6 +3,7 @@
  */
 import {Component, ViewEncapsulation} from 'angular2/core';
 import {RouteConfig, Router} from 'angular2/router';
+import {MATERIAL_DIRECTIVES, MATERIAL_PROVIDERS} from "ng2-material/all";
 
 import {Home} from './home';
 import {AppState} from './app.service';
@@ -14,8 +15,8 @@ import {RouterActive} from './router-active';
  */
 @Component({
   selector: 'app',
-  pipes: [ ],
-  providers: [ ],
+  pipes: [  ],
+  providers: [  ],
   directives: [ RouterActive ],
   encapsulation: ViewEncapsulation.None,
   styles: [

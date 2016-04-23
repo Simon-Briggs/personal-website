@@ -1,25 +1,30 @@
-<header>
-    <md-toolbar color="primary">
-        <nav>
-            <ul>
-                <li router-active>
-                    <a [routerLink]=" ['Index'] ">Home</a>
-                </li>
-                |
-                <li router-active>
-                    <a [routerLink]=" ['About'] ">About</a>
-                </li>
-            </ul>
-        </nav>
-    </md-toolbar>
-</header>
+<div class="content-wrapper">
 
-<main class="body">
-    <router-outlet></router-outlet>
-</main>
+    <header>
+        <md-toolbar color="primary">
+            <nav>
+                <ul>
+                    <li router-active>
+                        <a [routerLink]=" ['Index'] ">Home</a>
+                    </li>
+                    |
+                    <li router-active>
+                        <a [routerLink]=" ['About'] ">About</a>
+                    </li>
+                </ul>
+            </nav>
+        </md-toolbar>
+    </header>
 
-<footer class="footer">
-    This page's source code is available on 
-    <a target="_blank" href="https://github.com/Simon-Briggs/personal-website">Github</a>
-    <br />
-</footer>
+    <main class="body">
+        <router-outlet></router-outlet>
+    </main>
+
+
+    <footer class="footer">
+        This page's source code is available on
+        <a md-button target="_blank" href="https://github.com/Simon-Briggs/personal-website">Github</a>
+        <br />
+    </footer>
+
+</div>

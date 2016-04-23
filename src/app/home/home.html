@@ -1,16 +1,16 @@
 <md-card class="s-card" md-theme="default" md-theme-watch>
 	<md-card-title>
-		<md-card-title-text>
-			<span class="md-headline">Card with image</span>
-			<span class="md-subhead">Large</span>
-		</md-card-title-text>
 		<md-card-title-media>
 			<img md-card-lg-image src="/assets/img/simon.jpg">
 		</md-card-title-media>
+		<md-card-title-text>
+			<span class="md-headline">Simon Briggs</span>
+			<span class="md-subhead">Software Engineer</span>
+		</md-card-title-text>
 	</md-card-title>
 	<md-card-actions layout="row" layout-align="end center">
-		<md-button>Action 1</md-button>
-		<md-button>Action 2</md-button>
+		<button md-raised-button class="md-primary">Download my CV (.pdf)</button>
+		<button md-raised-button>or text transcript</button>
 	</md-card-actions>
 </md-card>
 
@@ -28,26 +28,17 @@
 
 	</md-card-content>
 </md-card>
+<md-card class="s-card">
+	<md-card-content>
+		<span x-large>Simon Briggs</span>
 
+		<form (ngSubmit)="submitState(localState.value)" autocomplete="off">
 
-<md-card>
-</md-card>
+			<md-input placeholder="Send me a message" [(ngModel)]="localState.value" autofocus>
+			</md-input>
 
-<md-card>
-</md-card>
+			<button md-raised-button color="primary">Submit</button>
+		</form>
 
-<md-card>
-</md-card>
-
-<md-card>
-</md-card>
-
-<md-card>
-</md-card>
-
-<md-card>
-</md-card>
-
-
-<md-card>
+	</md-card-content>
 </md-card>

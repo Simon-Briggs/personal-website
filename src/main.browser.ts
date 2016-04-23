@@ -8,6 +8,8 @@ import {bootstrap} from 'angular2/platform/browser';
 */
 import {DIRECTIVES, PIPES, PROVIDERS} from './platform/browser';
 import {ENV_PROVIDERS} from './platform/environment';
+import {MATERIAL_PROVIDERS} from 'ng2-material/all';
+
 
 /*
 * App Component
@@ -26,7 +28,8 @@ export function main(initialHmrState?: any): Promise<any> {
     ...ENV_PROVIDERS,
     ...DIRECTIVES,
     ...PIPES,
-    ...APP_PROVIDERS
+    ...APP_PROVIDERS,
+    MATERIAL_PROVIDERS
   ])
   .catch(err => console.error(err));
 
