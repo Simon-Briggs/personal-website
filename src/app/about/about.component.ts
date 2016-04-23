@@ -40,7 +40,7 @@ console.log('`About` component loaded asynchronously');
 export class About {
    value = "value";
   
-  constructor() {
+  constructor(public appState: AppState) {
     
   }
   

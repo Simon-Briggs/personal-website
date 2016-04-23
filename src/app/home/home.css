@@ -1,14 +1,26 @@
 .s-card {
-	width: 80%;
-	margin: 24px auto 24px auto;
+	max-width: 600px;
+	margin: 8px auto;
+}
+@media (min-width:1280px) and (max-width:1520px) {
+	.s-card {
+		margin-left: 10px;
+	}
+}
+@media (min-width:1280px) {
+	.s-card {
+		//margin-top: 10%;
+	}
 }
 
 @media (max-width:500px) {
-	.s-card {
-		width: 100%;
-	}
 	.large-only {
 		display: none;
 		opacity: 0;
 	}
+}
+
+.flex-container {
+    display: flex;
+    flex-flow: row wrap;
 }

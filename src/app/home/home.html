@@ -1,96 +1,106 @@
-<md-card class="s-card" md-theme="default" md-theme-watch>
-	<md-card-title>
-		<md-card-title-text flex="100" flex-xs="100" layout="column" layout-wrap layout-align="left start">
-			<span class="md-headline">Simon Briggs</span>
-			<span class="md-subhead">Software Engineer</span>
-		</md-card-title-text>
-		<md-card-title-media flex="100" flex-xs="100" layout="row" layout-wrap layout-align="center start">
-			<img md-media-sm src="/assets/img/simon.jpg">
-		</md-card-title-media>
-	</md-card-title>
-	<md-card-actions layout-xs="column" layout-align-xs="start" layout="row" layout-align="end center">
-		<button md-raised-button class="md-primary">Download my CV (.pdf)
+<div class="flex-container">
+	<div flex-gt-lg=40 flex=100>
+		<md-card class="s-card" md-theme="default" md-theme-watch>
+			<md-card-title>
+				<md-card-title-text flex="100" layout="column" layout-wrap layout-align="left start">
+					<span class="md-headline">SIMON BRIGGS</span>
+					<span class="md-subhead">Software Engineer</span>
+				</md-card-title-text>
+				<md-card-title-media flex="100" layout="row" layout-wrap layout-align="center start">
+					<img md-media-md src="/assets/img/simon.jpg">
+				</md-card-title-media>
+			</md-card-title>
+			<md-card-actions layout-xs="column" layout-align-xs="start" layout="row" layout-align="end center">
+				<button md-raised-button class="md-primary">Download my CV (.pdf)
 		</button>
-		<button md-raised-button class="">or text transcript
+				<button md-raised-button class="">or text transcript
 		</button>
-	</md-card-actions>
-</md-card>
+			</md-card-actions>
+		</md-card>
+	</div>
 
-<md-card class="s-card">
-<md-data-table layout-fill>
-  <thead>
-  <tr>
-    <th class="md-text-cell">Location</th>
-    <th>Country</th>
-    <th>Year from</th>
-    <th class="large-only">Years spent</th>
-  </tr>
-  </thead>
-  <tbody>
-  <tr *ngFor="#education of educationList">
-    <td class="md-text-cell">{{ education.name }}</td>
-    <td>{{ education.location }}</td>
-    <td>{{ education.startDate }}</td>
-    <td class="large-only">{{ education.duration }}</td>
-  </tr>
-  </tbody>
-</md-data-table>
-</md-card>
+	<div flex-gt-lg=60 flex=100>
+		<md-card layout="row">
+			<md-data-table>
+				<thead>
+					<tr>
+						<th class="md-text-cell">Location</th>
+						<th>Country</th>
+						<th>Year from</th>
+						<th class="large-only">Years spent</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr *ngFor="#education of educationList">
+						<td class="md-text-cell">{{ education.name }}</td>
+						<td>{{ education.location }}</td>
+						<td>{{ education.startDate }}</td>
+						<td class="large-only">{{ education.duration }}</td>
+					</tr>
+				</tbody>
+			</md-data-table>
+		</md-card>
 
-<md-card class="s-card">
-  <md-content>
-    <md-list>
-      <md-subheader class="md-no-sticky">3 line item</md-subheader>
-      <md-list-item class="md-3-line" *ngFor="#item of todos; #index = index">
-        <img [src]="item.face+'?'+index" class="md-avatar" alt="{{item.who}}"/>
-        <div class="md-list-item-text" layout="column">
-          <h3>{{ item.who }}</h3>
-          <h4>{{ item.what }}</h4>
-          <p>{{ item.notes }}</p>
-        </div>
-      </md-list-item>
-      <md-divider></md-divider>
-      <md-subheader class="md-no-sticky">2 line item</md-subheader>
-      <md-list-item class="md-2-line">
-        <img [src]="todos[0].face" class="md-avatar" [alt]="todos[0].who"/>
-        <div class="md-list-item-text">
-          <h3>{{ todos[0].who }}</h3>
-          <p>Secondary text</p>
-        </div>
-      </md-list-item>
-      <md-divider></md-divider>
-      <md-subheader class="md-no-sticky">3 line item, long paragraph (see on mobile)</md-subheader>
-      <md-list-item class="md-3-line md-long-text">
-        <img [src]="todos[0].face" class="md-avatar" [alt]="todos[0].who"/>
-        <div class="md-list-item-text">
-          <h3>{{ todos[0].who }}</h3>
-          <p>
-            Secondary line text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam massa quam.
-            Nulla metus metus, ullamcorper vel, tincidunt sed, euismod in, nibh. Quisque volutpat condimentum
-            velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
-          </p>
-        </div>
-      </md-list-item>
-      <md-list-item class="md-3-line md-long-text">
-        <img [src]="todos[1].face" class="md-avatar" [alt]="todos[1].who"/>
-        <div class="md-list-item-text">
-          <h3>{{ todos[1].who }}</h3>
-          <p>
-            Secondary line text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam massa quam.
-            Nulla metus metus, ullamcorper vel, tincidunt sed, euismod in, nibh. Quisque volutpat condimentum
-            velit. Class aptent taciti sociosqu ad litra torquent per conubia nostra, per inceptos himenaeos.
-          </p>
-        </div>
-      </md-list-item>
-      <md-divider></md-divider>
-      <md-subheader class="md-no-sticky">Classes</md-subheader>
-      <md-list-item class="md-2-line" *ngFor="#phone of phones; #index = index">
-        <i md-icon *ngIf="index !== 2" [ngClass]="{'md-avatar-icon': index === 1}">phone</i>
-        <div class="md-list-item-text" [ngClass]="{'md-offset': index == 2 }">
-          <h3> {{ phone.number }} </h3>
-          <p> {{ phone.type }} </p>
-        </div>
-      </md-list-item>
-    </md-list>
-  </md-content>
-</md-card>
+
+
+		<md-card>
+			<md-content>
+				<md-list>
+					<md-subheader class="md-no-sticky">3 line item</md-subheader>
+					<md-list-item class="md-3-line" *ngFor="#item of todos; #index = index">
+						<img [src]="item.face+'?'+index" class="md-avatar" alt="{{item.who}}" />
+						<div class="md-list-item-text" layout="column">
+							<h3>{{ item.who }}</h3>
+							<h4>{{ item.what }}</h4>
+							<p>{{ item.notes }}</p>
+						</div>
+					</md-list-item>
+					<md-divider></md-divider>
+					<md-subheader class="md-no-sticky">2 line item</md-subheader>
+					<md-list-item class="md-2-line">
+						<img [src]="todos[0].face" class="md-avatar" [alt]="todos[0].who" />
+						<div class="md-list-item-text">
+							<h3>{{ todos[0].who }}</h3>
+							<p>Secondary text</p>
+						</div>
+					</md-list-item>
+					<md-divider></md-divider>
+					<md-subheader class="md-no-sticky">3 line item, long paragraph (see on mobile)</md-subheader>
+					<md-list-item class="md-3-line md-long-text">
+						<img [src]="todos[0].face" class="md-avatar" [alt]="todos[0].who" />
+						<div class="md-list-item-text">
+							<h3>{{ todos[0].who }}</h3>
+							<p>
+								Secondary line text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam massa quam. Nulla metus metus, ullamcorper
+								vel, tincidunt sed, euismod in, nibh. Quisque volutpat condimentum velit. Class aptent taciti sociosqu ad litora
+								torquent per conubia nostra, per inceptos himenaeos.
+							</p>
+						</div>
+					</md-list-item>
+					<md-list-item class="md-3-line md-long-text">
+						<img [src]="todos[1].face" class="md-avatar" [alt]="todos[1].who" />
+						<div class="md-list-item-text">
+							<h3>{{ todos[1].who }}</h3>
+							<p>
+								Secondary line text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam massa quam. Nulla metus metus, ullamcorper
+								vel, tincidunt sed, euismod in, nibh. Quisque volutpat condimentum velit. Class aptent taciti sociosqu ad litra torquent
+								per conubia nostra, per inceptos himenaeos.
+							</p>
+						</div>
+					</md-list-item>
+					<md-divider></md-divider>
+					<md-subheader class="md-no-sticky">Classes</md-subheader>
+					<md-list-item class="md-2-line" *ngFor="#phone of phones; #index = index">
+						<i md-icon *ngIf="index !== 2" [ngClass]="{'md-avatar-icon': index === 1}">phone</i>
+						<div class="md-list-item-text" [ngClass]="{'md-offset': index == 2 }">
+							<h3> {{ phone.number }} </h3>
+							<p> {{ phone.type }} </p>
+						</div>
+					</md-list-item>
+				</md-list>
+			</md-content>
+		</md-card>
+
+
+	</div>
+</div>
