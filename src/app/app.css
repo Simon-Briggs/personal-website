@@ -7,6 +7,9 @@ html, body {
     min-height: 100%;
     position: relative;
 }
+.nav-links {
+    margin: auto;
+}
 .body {
     padding-bottom:44px;
 }
@@ -15,7 +18,7 @@ html, body {
     width: 100%;
     bottom: 0;
     height:48px;
-    text-align: right;
+    text-align: center;
     background-color: antiquewhite;
 }
 @media (max-width: 350px) {
