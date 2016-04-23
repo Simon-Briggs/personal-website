@@ -1,4 +1,6 @@
 import {Component} from 'angular2/core';
+import {AppState} from '../app.service';
+
 
 /*
  * We're loading this component asynchronously
@@ -26,8 +28,8 @@ console.log('`About` component loaded asynchronously');
     <md-card-content>
       <span x-large>Send me a message:</span>
 
-      <form (ngSubmit)="submitState(localState.value)" autocomplete="off">
-        <md-input placeholder="Send me a message" [(ngModel)]="localState.value" autofocus></md-input>
+      <form (ngSubmit)="submitState(value)" autocomplete="off">
+        <md-input placeholder="Send me a message" autofocus></md-input>
         <button md-raised-button color="primary">Submit</button>
       </form>
 
@@ -36,9 +38,17 @@ console.log('`About` component loaded asynchronously');
   `
 })
 export class About {
+   value = "value";
+  
   constructor() {
-
+    
   }
+  
+  submitState(value) {
+    console.log('submitState', value);
+    this.appState.set('value', value);
+  }
+
 
   ngOnInit() {
     console.log('hello `About` component');

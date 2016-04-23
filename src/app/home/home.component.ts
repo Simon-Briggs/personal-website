@@ -1,8 +1,7 @@
 import {Component} from 'angular2/core';
-import {AppState} from '../app.service';
-
 import {Title} from './title';
 import {XLarge} from './x-large';
+import {AppState} from '../app.service';
 
 @Component({
   // The selector is what angular internally uses
@@ -28,51 +27,49 @@ import {XLarge} from './x-large';
 export class Home {
   // Set our default values
   localState = { value: '' };
-  educationList = [{
-    name: "IBM",
-    location: "UK",
-    startDate: 2012,
-    duration: 4
-  }, {
-      name: "Waseda University",
-      location: "Tokyo, Japan",
-      startDate: 2010,
-      duration: 1
-    }, {
-      name: "Nottingham University",
-      location: "UK",
-      startDate: 2009,
-      duration: 3
-    }];
-  todos = [{
-    who: "IBM",
-    face: "UK",
-    startDate: 2012,
-    duration: 4
-  }, {
-      who: "Waseda University",
-      face: "Tokyo, Japan",
-      startDate: 2010,
-      duration: 1
-    }, {
-      who: "Nottingham University",
-      face: "UK",
-      startDate: 2009,
-      duration: 3
-    }];
+  educationList;
+  todos;
+  
   // TypeScript public modifiers
   constructor(public appState: AppState, public title: Title) {
 
+    this.educationList = [{
+      name: "IBM",
+      location: "UK",
+      startDate: 2012,
+      duration: 4
+    }, {
+        name: "Waseda University",
+        location: "Tokyo, Japan",
+        startDate: 2010,
+        duration: 1
+      }, {
+        name: "Nottingham University",
+        location: "UK",
+        startDate: 2009,
+        duration: 3
+      }];
+    this.todos = [{
+      who: "IBM",
+      face: "/assets/img/simon.jpg",
+      startDate: 2012,
+      duration: 4
+    }, {
+        who: "Waseda University",
+        face: "/assets/img/simon.jpg",
+        startDate: 2010,
+        duration: 1
+      }, {
+        who: "Nottingham University",
+        face: "/assets/img/simon.jpg",
+        startDate: 2009,
+        duration: 3
+      }];
   }
 
   ngOnInit() {
     console.log('hello `Home` component');
     // this.title.getData().subscribe(data => this.data = data);
-  }
-
-  submitState(value) {
-    console.log('submitState', value);
-    this.appState.set('value', value);
   }
 
 }
