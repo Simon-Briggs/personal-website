@@ -25,9 +25,14 @@ html, body {
   flex: 1 1 auto;
 }
 .contact-me {
-  padding-top:3px;
   flex: 0 1 auto;
 }
+@media (min-width: 600px) {
+    .contact-me {    
+      padding-top:3px;
+    }
+}
+
 .footer {
     position: absolute;
     width: 100%;
