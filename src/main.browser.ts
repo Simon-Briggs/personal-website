@@ -10,6 +10,10 @@ import {DIRECTIVES, PIPES, PROVIDERS} from './platform/browser';
 import {ENV_PROVIDERS} from './platform/environment';
 import {MATERIAL_PROVIDERS} from 'ng2-material/all';
 
+import {Http, HTTP_PROVIDERS} from 'angular2/http';
+import {Component, Injectable, provide} from 'angular2/core';
+import {TRANSLATE_PROVIDERS, TranslateService, TranslatePipe, TranslateLoader, TranslateStaticLoader} from 'ng2-translate/ng2-translate';
+
 
 /*
 * App Component
@@ -29,6 +33,10 @@ export function main(initialHmrState?: any): Promise<any> {
     ...DIRECTIVES,
     ...PIPES,
     ...APP_PROVIDERS,
+    provide(TranslateLoader, {
+        useFactory: (http: Http) => new TranslateStaticLoader(http, 'assets/i18n', '.json'),
+        deps: [Http]
+    }),
     MATERIAL_PROVIDERS
   ])
   .catch(err => console.error(err));
