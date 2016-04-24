@@ -1,4 +1,5 @@
 {
+	"changeLanguage": "言語を選択:",
 	"name": "竹中　聡司",
 	"title": "フルスタック ソフトウェアエンジニア",
 	"download": "履歴書をダウンロード(.PDF)",
@@ -13,6 +14,6 @@
 		"location": "場所",
 		"country" : "国",
 		"from" : "年",
-		"duration": "経過"
+		"duration": "居た長さ"
 	}
 }

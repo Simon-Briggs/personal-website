@@ -3,6 +3,10 @@ html, body {
     height: 100%;
 }
 
+md-toolbar:not(.md-menu-toolbar) {
+    background-color: #477696 !important;
+}
+
 .content-wrapper {
     min-height: 100%;
     position: relative;
@@ -15,10 +19,19 @@ html, body {
     padding-bottom: 44px;
 }
 
+@media (max-width:500px) {
+	.large-only {
+		display: none;
+		opacity: 0;
+	}
+}
 
 .flex-container {
     display: flex;
     flex-flow: row wrap;
+}
+.choose-language {
+    margin-left: 20px;
 }
 .i18n {
   padding-top: 10px;
