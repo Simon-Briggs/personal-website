@@ -1,3 +1,9 @@
+.title-banner {
+	margin: 15vh auto 20vh auto;
+	text-align: center;
+	color: white;
+}
+
 .simon-card {
 	max-width: 600px;
 	margin: 8px auto;
@@ -27,11 +33,12 @@
     flex-flow: row wrap;
 }
 
+/** TODO: maybe attach this event to scrolling
 md-card { 
 	animation-name: skew;
 	animation-duration: 1s;
 } 
- 
+ */
 @keyframes skew {
 	from {
 		-webkit-transform: skewX(25deg) skewY(20deg);

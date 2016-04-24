@@ -1,0 +1,55 @@
+﻿SIMON BRIGGS	
+
+407 Park Road, LE11 2HQ, UK
+Mobile:	+44 7587 088 133
+Email: simonbriggs@outlook.com
+
+
+Profile
+Full stack web developer, programming an AngularJS based frontend with a Java EE REST backend, developing in an agile, continuous integration environment, using Git, Gulp and Jenkins. Having experienced both software development and test roles across 4 teams for IBM WebSphere MQ, now looking to continue building skills in full stack development, in a start-up company, working towards fast paced release cycles, using the latest technologies and languages. 
+
+
+Technical Skills
+Web technologies	JavaScript, TypeScript, AngularJS, Bootstrap, HTML, SASS, CSS
+IBM technologies	WebSphere MQ, Liberty application server, RTC
+Other Technologies	Java, Java EE, C#, Perl, Android SDK, Agile, Continuous integration
+Development tools	GIT, Gulp, Jenkins, Eclipse, Windows 7 & 10, Linux RHEL & SLES	
+Languages 		English (native), Japanese (fluent)
+
+
+Work History
+Software Engineer, IBM, Hursley Hampshire  (September 2012 – Present)
+March 2015 – Present:
+- Web UI and REST API developer for IBM WebSphere MQ. Working closely in a squad of 4 people, had a major role in the full end-to end product development lifecycle including design, architecting, implementation, testing and release of a new web application and API. Used AngularJS and SASS as the front end technologies, Java EE interfacing with JMS on WebSphere Liberty as the server, and utilised a Git, Gulp and Jenkins build pipeline.
+- Enhanced a Dojo based web interface for the IBM MQ Appliance. Presented technical demonstrations to internal sales and support teams and provided support to customers of the web interface via email or through bug fixes.
+- Involved in 11 pending patents.
+					
+September 2013 – February 2015:
+- Automated functional tester for the IBM MQ Appliance, adapting existing test infrastructure for coverage of new features. Framework involved up to 100 physical machines, numerous virtual cloud provisioned machines and over 600 test suites. Using Perl and a Linux development environment, communicated effectively with a team of over 100 developers, testers, release engineers and documentation writers.
+							
+September 2012 – August 2013:
+- Developed the automated GUI test suite for MQ Managed File Transfer using an RFT framework in Java.
+- Created an educational game for 13 year olds, using Java and Swing, allowing them to drag and drop logic nodes into a tree, to form an AI for an on-screen robot.
+ 
+Variety of part times jobs (2010 – 2012)
+- Intern at a medical company, Mediwatch, involved in developing a Drupal website
+- IT help desk for Loughborough University while they hosted Olympic training sessions
+- Interpreter for the Japanese Olympic triathlon team
+- Bartender for a pub in Tokyo
+- Extra for a TV show
+
+
+University
+Graduated a joint honours degree in electronic and computer engineering, studying at Waseda University in Japan for the second year of my university where all lessons were taught in Japanese.
+
+For my dissertation, C# was used to develop both a front and back end of a network analyser using a PicoTech oscilloscope, signal generator, and their API, to graphically display accuracy of circuits. 
+
+
+Education and Qualifications
+University of Nottingham 2009 – 2012
+BEng Honours in Electronic and Computer Engineering – 2:1
+Waseda University, Tokyo (Year Abroad) 2010 – 2011
+Loughborough Grammar School 2002 – 2009
+A Levels – 3As in Maths, Chemistry, Biology, B in Further Maths
+GCSEs – 8 A*s and 4As
+	

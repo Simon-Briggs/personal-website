@@ -1,3 +1,9 @@
+<div class="title-banner">
+	<span class="md-display-3">{{ 'name' | translate}}</span>
+</div>
+<div class="title-banner">
+	<span class="md-display-2 ">{{ 'title' | translate}}</span>
+</div>
 <div class="flex-container">
 	<div flex-gt-lg=40 flex=100>
 		<md-card class="simon-card" md-theme="default" md-theme-watch>
@@ -11,10 +17,12 @@
 				</md-card-title-media>
 			</md-card-title>
 			<md-card-actions layout-xs="column" layout-align-xs="start" layout="row" layout-align="end center">
-				<button md-raised-button class="md-primary">{{ 'download' | translate}}
-		</button>
-				<button md-raised-button class="">{{ 'downloadText' | translate}}
-		</button>
+				<a href="/assets/cv/Simon Briggs CV April 2016.pdf" target="_blank">
+					<button md-raised-button class="md-primary">{{ 'download' | translate}}</button>
+				</a>
+				<a href="/assets/cv/Simon Briggs CV April 2016 Transcript.txt" target="_blank">
+					<button md-raised-button class="">{{ 'downloadText' | translate}}</button>
+				</a>
 			</md-card-actions>
 		</md-card>
 	</div>
@@ -32,8 +40,8 @@
 				</thead>
 				<tbody>
 					<tr *ngFor="#item of educationList">
-						<td class="md-text-cell">{{  ("history." + item.name)| translate }}</td>
-						<td>{{  ("history." + item.location) | translate }}</td>
+						<td class="md-text-cell">{{ ("history." + item.name)| translate }}</td>
+						<td>{{ ("history." + item.location) | translate }}</td>
 						<td>{{ item.startDate }}</td>
 						<td class="large-only">{{ item.duration }}</td>
 					</tr>
@@ -81,17 +89,17 @@
 					</md-list-item>
 					<md-divider></md-divider>
 					<md-subheader class="md-no-sticky">Classes</md-subheader>
-					<md-list-item class="md-2-line" *ngFor="#phone of phones; #index = index">
+					<md-list-item class="md-2-line" *ngFor="#phone of educationList; #index = index">
 						<i md-icon *ngIf="index !== 2" [ngClass]="{'md-avatar-icon': index === 1}">phone</i>
 						<div class="md-list-item-text" [ngClass]="{'md-offset': index == 2 }">
-							<h3> {{ phone.number }} </h3>
-							<p> {{ phone.type }} </p>
+							<h3> {{ phone.name }} </h3>
+							<p> {{ phone.duration }} </p>
 						</div>
 					</md-list-item>
 				</md-list>
 			</md-content>
 		</md-card>
-		
-<div id="slide1" class="slide"></div>
+
+		<div id="slide1" class="slide"></div>
 	</div>
 </div>
