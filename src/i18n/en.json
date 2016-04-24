@@ -1,0 +1,18 @@
+{
+	"name": "SIMON BRIGGS",
+	"title": "Full Stack Web Developer",
+	"download": "Download my CV (.PDF)",
+	"downloadTxt": "Or Text Transcript",
+	"viewGithub": "This page's source code is available on",
+	"history": { 
+		"IBM":"IBM",
+		"Waseda": "Waseda University",
+		"Nottingham": "University of Nottingham",
+		"UK": "UK",
+		"Japan": "Japan",
+		"location": "Location",
+		"country" : "Country",
+		"from" : "Year from",
+		"duration": "Years spent"
+	}
+}

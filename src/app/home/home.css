@@ -1,15 +1,17 @@
-.s-card {
+.simon-card {
 	max-width: 600px;
 	margin: 8px auto;
 }
-@media (min-width:1280px) and (max-width:1520px) {
-	.s-card {
-		margin-left: 10px;
+
+@media (min-width: 1400px) {
+	.history-card {
+		max-width: 800px;
+		margin: 8px auto;
 	}
 }
-@media (min-width:1280px) {
-	.s-card {
-		//margin-top: 10%;
+@media (min-width:1280px) and (max-width:1520px) {
+	.simon-card {
+		margin-left: 10px;
 	}
 }
 

@@ -1,0 +1,18 @@
+{
+	"name": "竹中　聡司",
+	"title": "フルスタック ソフトウェアエンジニア",
+	"download": "履歴書をダウンロード(.PDF)",
+	"downloadText": "テキストファイルとしてダウンロード",
+	"viewGithub": "このページのソースコードを見る",
+	"history": { 
+		"IBM":"IBM",
+		"Waseda": "早稲田大学",
+		"Nottingham": "ノッティンガム大学",
+		"UK": "イギリス",
+		"Japan": "日本",
+		"location": "場所",
+		"country" : "国",
+		"from" : "年",
+		"duration": "経過"
+	}
+}

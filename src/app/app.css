@@ -21,9 +21,11 @@ html, body {
     flex-flow: row wrap;
 }
 .i18n {
+  padding-top: 10px;
   flex: 1 1 auto;
 }
 .contact-me {
+  padding-top:3px;
   flex: 0 1 auto;
 }
 .footer {

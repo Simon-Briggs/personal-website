@@ -13,6 +13,9 @@ import {HTTP_PROVIDERS} from 'angular2/http';
 // Angular 2 Router
 import {ROUTER_PROVIDERS, LocationStrategy, HashLocationStrategy} from 'angular2/router';
 
+// Angular 2 Translate
+import {TRANSLATE_PROVIDERS, TranslateService, TranslatePipe, TranslateLoader, TranslateStaticLoader} from 'ng2-translate/ng2-translate';
+
 // Angular 2 Material
 import {MATERIAL_PROVIDERS} from 'ng2-material/all';
 
@@ -23,6 +26,7 @@ import {MATERIAL_PROVIDERS} from 'ng2-material/all';
 export const APPLICATION_PROVIDERS = [
   ...FORM_PROVIDERS,
   ...HTTP_PROVIDERS,
+  ...TRANSLATE_PROVIDERS,
   ...MATERIAL_PROVIDERS,
   ...ROUTER_PROVIDERS,
   provide(LocationStrategy, { useClass: HashLocationStrategy })

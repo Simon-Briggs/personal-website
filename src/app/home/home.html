@@ -1,41 +1,41 @@
 <div class="flex-container">
 	<div flex-gt-lg=40 flex=100>
-		<md-card class="s-card" md-theme="default" md-theme-watch>
+		<md-card class="simon-card" md-theme="default" md-theme-watch>
 			<md-card-title>
 				<md-card-title-text flex="100" layout="column" layout-wrap layout-align="left start">
-					<span class="md-headline">SIMON BRIGGS</span>
-					<span class="md-subhead">Full Stack Developer</span>
+					<span class="md-headline">{{ 'name' | translate}}</span>
+					<span class="md-subhead">{{ 'title' | translate}}</span>
 				</md-card-title-text>
 				<md-card-title-media flex="100" layout="row" layout-wrap layout-align="center start">
 					<img md-media-md src="/assets/img/simon.jpg">
 				</md-card-title-media>
 			</md-card-title>
 			<md-card-actions layout-xs="column" layout-align-xs="start" layout="row" layout-align="end center">
-				<button md-raised-button class="md-primary">Download my CV (.pdf)
+				<button md-raised-button class="md-primary">{{ 'download' | translate}}
 		</button>
-				<button md-raised-button class="">or text transcript
+				<button md-raised-button class="">{{ 'downloadText' | translate}}
 		</button>
 			</md-card-actions>
 		</md-card>
 	</div>
 
 	<div flex-gt-lg=60 flex=100>
-		<md-card layout="row">
+		<md-card class="history-card" layout="row">
 			<md-data-table>
 				<thead>
 					<tr>
-						<th class="md-text-cell">Location</th>
-						<th>Country</th>
-						<th>Year from</th>
-						<th class="large-only">Years spent</th>
+						<th class="md-text-cell">{{ 'history.location' | translate}}</th>
+						<th>{{ 'history.country' | translate}}</th>
+						<th>{{ 'history.from' | translate}}</th>
+						<th class="large-only">{{ 'history.duration' | translate}}</th>
 					</tr>
 				</thead>
 				<tbody>
-					<tr *ngFor="#education of educationList">
-						<td class="md-text-cell">{{ education.name }}</td>
-						<td>{{ education.location }}</td>
-						<td>{{ education.startDate }}</td>
-						<td class="large-only">{{ education.duration }}</td>
+					<tr *ngFor="#item of educationList">
+						<td class="md-text-cell">{{  ("history." + item.name)| translate }}</td>
+						<td>{{  ("history." + item.location) | translate }}</td>
+						<td>{{ item.startDate }}</td>
+						<td class="large-only">{{ item.duration }}</td>
 					</tr>
 				</tbody>
 			</md-data-table>
@@ -50,7 +50,7 @@
 					<md-list-item class="md-3-line" *ngFor="#item of educationList; #index = index">
 						<img [src]="item.flag+'?'+index" class="md-avatar" alt="{{item.name}}" />
 						<div class="md-list-item-text" layout="column">
-							<h3>{{ item.name }}</h3>
+							<h3>{{ ("history." + item.name) | translate }}</h3>
 							<h4>{{ item.what }}</h4>
 							<p>{{ item.notes }}</p>
 						</div>
@@ -60,7 +60,7 @@
 					<md-list-item class="md-3-line md-long-text">
 						<img [src]="educationList[0].flag" class="md-avatar" [alt]="educationList[0].name" />
 						<div class="md-list-item-text">
-							<h3>{{ educationList[0].name }}</h3>
+							<h3>{{ ("history." + educationList[0].name) | translate }}</h3>
 							<p>
 								Secondary line text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam massa quam. Nulla metus metus, ullamcorper
 								vel, tincidunt sed, euismod in, nibh. Quisque volutpat condimentum velit. Class aptent taciti sociosqu ad litora
@@ -71,7 +71,7 @@
 					<md-list-item class="md-3-line md-long-text">
 						<img [src]="educationList[1].flag" class="md-avatar" [alt]="educationList[1].name" />
 						<div class="md-list-item-text">
-							<h3>{{ educationList[1].name }}</h3>
+							<h3>{{ ("history." + educationList[1].name) | translate }}</h3>
 							<p>
 								Secondary line text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam massa quam. Nulla metus metus, ullamcorper
 								vel, tincidunt sed, euismod in, nibh. Quisque volutpat condimentum velit. Class aptent taciti sociosqu ad litra torquent

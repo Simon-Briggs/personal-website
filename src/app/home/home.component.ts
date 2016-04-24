@@ -2,6 +2,8 @@ import {Component} from 'angular2/core';
 import {Title} from './title';
 import {XLarge} from './x-large';
 import {AppState} from '../app.service';
+import {TranslateService, TranslatePipe, TranslateLoader, TranslateStaticLoader} from 'ng2-translate/ng2-translate';
+
 
 @Component({
   // The selector is what angular internally uses
@@ -18,7 +20,7 @@ import {AppState} from '../app.service';
     XLarge
   ],
   // We need to tell Angular's compiler which custom pipes are in our template.
-  pipes: [],
+  pipes: [ TranslatePipe ],
   // Our list of styles in our component. We may add more to compose many styles together
   styles: [require('./home.css')],
   // Every Angular template is first compiled by the browser before Angular runs it's compiler
@@ -40,13 +42,13 @@ export class Home {
       startDate: 2012,
       duration: 4
     }, {
-        name: "Waseda University",
+        name: "Waseda",
         flag: "/assets/img/jp.svg",
         location: "Japan",
         startDate: 2010,
         duration: 1
       }, {
-        name: "University of Nottingham",
+        name: "Nottingham",
         flag: "/assets/img/gb.svg",
         location: "UK",
         startDate: 2009,
