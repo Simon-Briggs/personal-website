@@ -42,6 +42,19 @@
 
   <app>
     <div style="width:100%; text-align:center; margin-top: 10%">Loading...</div>
+    <style>
+      @keyframes spin {
+        from {
+          -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
+          transform: rotate(0deg);
+        }
+        to {
+          -webkit-transform: rotate(360deg); /* Chrome, Safari, Opera */
+          transform: rotate(360deg);
+        }
+      }
+    </style>
+    <div style="display: block; width:100%; text-align:center;"><div style="-webkit-animation: spin 0.5s infinite; animation: spin 0.5s infinite;">c</div></div>
   </app>
 
   <script>

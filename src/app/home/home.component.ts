@@ -41,6 +41,9 @@ export class Home {
       "name": "Angular JS",
       "proficiency" : 1
     }, {
+      "name": "Angular 2 with Ionic 2",
+      "proficiency" : 1
+    }, {
       "name": "GIT",
       "proficiency" : 1
     }, {
@@ -53,9 +56,15 @@ export class Home {
       "name": "Webpack",
       "proficiency" : 1
     }, {
-      "name": "i18n",
+      "name": "CSS & SASS",
       "proficiency" : 1
-    } ];
+    }, {
+      "name": "HTML 5",
+      "proficiency" : 1
+    }, {
+      "name": "Linux & Windows",
+      "proficiency" : 1
+    }];
 
   // TypeScript public modifiers
   constructor(public appState: AppState, public title: Title) {

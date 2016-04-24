@@ -15,9 +15,6 @@ md-toolbar:not(.md-menu-toolbar) {
     width:100%;
     background-attachment: fixed;  
 }
-.body {
-    padding-bottom: 44px;
-}
 .flex-container {
     display: flex;
     flex-flow: row wrap;
@@ -40,21 +37,24 @@ md-toolbar:not(.md-menu-toolbar) {
     }
 }
 
+.body {
+    padding-bottom: 52px;
+}
 .footer {
     position: absolute;
     width: 100%;
     bottom: 0;
-    height:48px;
+    height:52px;
     text-align: center;
     opacity: 0.8;
     background-color: antiquewhite;
 }
 @media (max-width: 450px) {
     .body {
-        padding-bottom: 68px;
+        padding-bottom: 82px;
     }
     .footer {
-        height: 62px;
+        height: 72px;
         padding-top: 10px;
         overflow:hidden;
     }
