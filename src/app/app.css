@@ -18,20 +18,14 @@ md-toolbar:not(.md-menu-toolbar) {
 .body {
     padding-bottom: 44px;
 }
-
-@media (max-width:500px) {
-	.large-only {
-		display: none;
-		opacity: 0;
-	}
-}
-
 .flex-container {
     display: flex;
     flex-flow: row wrap;
 }
 .choose-language {
     margin-left: 20px;
+    display: inline-block;
+    width: 170px;
 }
 .i18n {
   padding-top: 10px;
@@ -97,4 +91,11 @@ md-toolbar li.active {
 }
 .flag-icon-jp {
   background-image: url("/assets/img/jp.svg");
+}
+
+@media (max-width:500px) {
+	.large-only {
+		display: none;
+		opacity: 0;
+	}
 }
