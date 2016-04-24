@@ -46,56 +46,72 @@
 		</md-card>
 
 
+		<div class="flex-container">
 
-		<md-card>
-			<md-content>
-				<md-list>
-					<md-subheader class="md-no-sticky">3 line item</md-subheader>
-					<md-list-item class="md-3-line" *ngFor="#item of educationList; #index = index">
-						<img [src]="item.flag+'?'+index" class="md-avatar" alt="{{item.name}}" />
-						<div class="md-list-item-text" layout="column">
-							<h3>{{ ("history." + item.name) | translate }}</h3>
-							<h4>{{ item.what }}</h4>
-							<p>{{ item.notes }}</p>
-						</div>
-					</md-list-item>
-					<md-divider></md-divider>
-					<md-subheader class="md-no-sticky">3 line item, long paragraph (see on mobile)</md-subheader>
-					<md-list-item class="md-3-line md-long-text">
-						<img [src]="educationList[0].flag" class="md-avatar" [alt]="educationList[0].name" />
-						<div class="md-list-item-text">
-							<h3>{{ ("history." + educationList[0].name) | translate }}</h3>
-							<p>
-								Secondary line text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam massa quam. Nulla metus metus, ullamcorper
-								vel, tincidunt sed, euismod in, nibh. Quisque volutpat condimentum velit. Class aptent taciti sociosqu ad litora
-								torquent per conubia nostra, per inceptos himenaeos.
-							</p>
-						</div>
-					</md-list-item>
-					<md-list-item class="md-3-line md-long-text">
-						<img [src]="educationList[1].flag" class="md-avatar" [alt]="educationList[1].name" />
-						<div class="md-list-item-text">
-							<h3>{{ ("history." + educationList[1].name) | translate }}</h3>
-							<p>
-								Secondary line text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam massa quam. Nulla metus metus, ullamcorper
-								vel, tincidunt sed, euismod in, nibh. Quisque volutpat condimentum velit. Class aptent taciti sociosqu ad litra torquent
-								per conubia nostra, per inceptos himenaeos.
-							</p>
-						</div>
-					</md-list-item>
-					<md-divider></md-divider>
-					<md-subheader class="md-no-sticky">Classes</md-subheader>
-					<md-list-item class="md-2-line" *ngFor="#phone of educationList; #index = index">
-						<i md-icon *ngIf="index !== 2" [ngClass]="{'md-avatar-icon': index === 1}">phone</i>
-						<div class="md-list-item-text" [ngClass]="{'md-offset': index == 2 }">
-							<h3> {{ phone.name }} </h3>
-							<p> {{ phone.duration }} </p>
-						</div>
-					</md-list-item>
-				</md-list>
-			</md-content>
-		</md-card>
+			<div flex-gt-lg=33 flex=100>
+				<md-card>
+					<md-content>
+						<md-subheader class="md-no-sticky">History:</md-subheader>
+						<md-list-item class="md-3-line" *ngFor="#item of educationList; #index = index">
+							<img [src]="item.flag+'?'+index" class="md-avatar" alt="{{item.name}}" />
+							<div class="md-list-item-text" layout="column">
+								<h3>{{ ("history." + item.name) | translate }}</h3>
+								<h4>{{ item.what }}</h4>
+								<p>{{ item.notes }}</p>
+							</div>
+						</md-list-item>
+						<md-divider></md-divider>
+						<md-subheader class="md-no-sticky">{{ 'subheading1' | translate }}</md-subheader>
+						<md-list-item class="md-3-line md-long-text">
+							<img [src]="educationList[0].flag" class="md-avatar" [alt]="educationList[0].name" />
+							<div class="md-list-item-text">
+								<h3>{{ ("history." + educationList[0].name) | translate }}</h3>
+								<p>
+									{{ 'description1' | translate }}
 
-		<div id="slide1" class="slide"></div>
+								</p>
+							</div>
+						</md-list-item>
+
+					</md-content>
+				</md-card>
+
+			</div>
+
+			<div flex-gt-lg=33 flex=100>
+				<md-card>
+					<md-content>
+						<md-subheader class="md-no-sticky">{{ 'subheading2' | translate }}</md-subheader>
+						<md-list-item class="md-3-line md-long-text">
+							<img [src]="educationList[1].flag" class="md-avatar" [alt]="educationList[1].name" />
+							<div class="md-list-item-text">
+								<h3>{{ ("history." + educationList[1].name) | translate }}</h3>
+								<p>
+									{{ 'description2' | translate }}
+								</p>
+							</div>
+						</md-list-item>
+
+
+					</md-content>
+				</md-card>
+
+			</div>
+
+			<div flex-gt-lg=33 flex=100>
+				<md-card>
+					<md-content>
+						<md-subheader class="md-no-sticky">{{ 'subheading3' | translate }}</md-subheader>
+						<md-list-item class="md-2-line" *ngFor="#skill of skills; #index = index">
+							<i md-icon *ngIf="index !== 2" [ngClass]="{'md-avatar-icon': index === 1}">phone</i>
+							<div class="md-list-item-text" [ngClass]="{'md-offset': index == 2 }">
+								<h3> {{ skill.name }} </h3>
+							</div>
+						</md-list-item>
+					</md-content>
+				</md-card>
+			</div>
+		</div>
+
 	</div>
 </div>

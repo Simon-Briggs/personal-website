@@ -31,6 +31,31 @@ export class Home {
   localState = { value: '' };
   educationList;
   todos;
+  skills = [{
+      "name": "TypeScript",
+      "proficiency" : 1
+    }, {
+      "name": "JavaScript",
+      "proficiency" : 1
+    }, {
+      "name": "Angular JS",
+      "proficiency" : 1
+    }, {
+      "name": "GIT",
+      "proficiency" : 1
+    }, {
+      "name": "Gulp",
+      "proficiency" : 1
+    }, {
+      "name": "Jenkins",
+      "proficiency" : 1
+    }, {
+      "name": "Webpack",
+      "proficiency" : 1
+    }, {
+      "name": "i18n",
+      "proficiency" : 1
+    } ];
 
   // TypeScript public modifiers
   constructor(public appState: AppState, public title: Title) {
@@ -55,7 +80,6 @@ export class Home {
         duration: 3
       }];
   }
-
   ngOnInit() {
     console.log('hello `Home` component');
     // this.title.getData().subscribe(data => this.data = data);

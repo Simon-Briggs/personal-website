@@ -5,6 +5,11 @@
 	"download": "履歴書をダウンロード(.PDF)",
 	"downloadText": "テキストファイルとしてダウンロード",
 	"viewGithub": "このページのソースコードを見る",
+	"subheading1": "情報工学",
+	"subheading2": "大学",
+	"subheading3": "スキル",
+	"description1": "４人のチームでアジァイルなウェブプログラミング",
+	"description2": "日本語と英語の両方で電子と情報理工学を学んだ",
 	"history": { 
 		"IBM":"IBM",
 		"Waseda": "早稲田大学",
