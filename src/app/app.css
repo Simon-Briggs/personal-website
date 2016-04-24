@@ -9,14 +9,22 @@ html, body {
     background-image: url("/assets/img/bg.jpg");
     background-size: cover;
     width:100%;
-    filter: blur(5px) brightness(0.5);
     background-attachment: fixed;  
 }
-.nav-links {
-    margin: auto;
-}
 .body {
-    padding-bottom:44px;
+    padding-bottom: 44px;
+}
+
+
+.flex-container {
+    display: flex;
+    flex-flow: row wrap;
+}
+.i18n {
+  flex: 1 1 auto;
+}
+.contact-me {
+  flex: 0 1 auto;
 }
 .footer {
     position: absolute;
@@ -50,4 +58,23 @@ md-toolbar li {
 }
 md-toolbar li.active {
     background-color: lightgray;
+}
+
+/* i18n flags */
+
+.flag-icon {
+  background-size: contain;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  position: relative;
+  display: inline-block;
+  width: 1.33333333em;
+  height: 1em;
+  line-height: 1em;
+}
+.flag-icon-gb {
+  background-image: url("/assets/img/gb.svg");
+}
+.flag-icon-jp {
+  background-image: url("/assets/img/jp.svg");
 }

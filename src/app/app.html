@@ -2,8 +2,12 @@
 
     <header>
         <md-toolbar color="primary">
-            <nav class="nav-links">
-                <ul>
+            <nav class="nav-links flex-container">
+                <div class="i18n">
+                    <button md-button><span class="flag-icon flag-icon-gb"></span></button>
+                    <button md-button><span class="flag-icon flag-icon-jp"></span></button>
+                </div>
+                <!--
                     <button md-button router-active [routerLink]=" ['Index'] ">
                         Home
                     </button>
@@ -11,12 +15,14 @@
                     <button md-button router-active [routerLink]=" ['About'] ">
                         About
                     </button>
-                </ul>
-                <a href="mailto:simonbriggs@ymail.com">
-                <button md-fab class="md-primary" aria-label="Contact me" >
+                    -->
+                <div class="contact-me">
+                <a href="mailto:simonbriggs@ymail.com?subject=regarding simonbriggs.website">
+                    <button md-fab class="md-secondary" aria-label="Contact me">
                     <i md-icon>comment</i>
                 </button>
                 </a>
+                </div>
             </nav>
         </md-toolbar>
     </header>

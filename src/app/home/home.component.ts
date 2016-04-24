@@ -29,39 +29,26 @@ export class Home {
   localState = { value: '' };
   educationList;
   todos;
-  
+
   // TypeScript public modifiers
   constructor(public appState: AppState, public title: Title) {
 
     this.educationList = [{
       name: "IBM",
+      flag: "/assets/img/gb.svg",
       location: "UK",
       startDate: 2012,
       duration: 4
     }, {
         name: "Waseda University",
-        location: "Tokyo, Japan",
+        flag: "/assets/img/jp.svg",
+        location: "Japan",
         startDate: 2010,
         duration: 1
       }, {
-        name: "Nottingham University",
+        name: "University of Nottingham",
+        flag: "/assets/img/gb.svg",
         location: "UK",
-        startDate: 2009,
-        duration: 3
-      }];
-    this.todos = [{
-      who: "IBM",
-      face: "/assets/img/simon.jpg",
-      startDate: 2012,
-      duration: 4
-    }, {
-        who: "Waseda University",
-        face: "/assets/img/simon.jpg",
-        startDate: 2010,
-        duration: 1
-      }, {
-        who: "Nottingham University",
-        face: "/assets/img/simon.jpg",
         startDate: 2009,
         duration: 3
       }];
