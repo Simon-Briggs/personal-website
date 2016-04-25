@@ -5,7 +5,7 @@
 	<span class="md-display-2 ">{{ 'title' | translate}}</span>
 </div>
 
-<md-card class="simon-card" md-theme="default" md-theme-watch>
+<md-card id="profile" class="simon-card" md-theme="default" md-theme-watch>
 	<md-card-title>
 		<md-card-title-text flex="100" layout="column" layout-wrap layout-align="left start">
 			<span class="md-headline">{{ 'name' | translate}}</span>
@@ -28,18 +28,6 @@
 		<div flex-gt-md=33 flex-md=100 flex=100>
 			<md-card>
 				<md-content>
-					<!--
-						<md-subheader class="md-no-sticky">History:</md-subheader>
-						<md-list-item class="md-3-line" *ngFor="#item of educationList; #index = index">
-							<img [src]="item.flag+'?'+index" class="md-avatar" alt="{{item.name}}" />
-							<div class="md-list-item-text" layout="column">
-								<h3>{{ ("history." + item.name) | translate }}</h3>
-								<h4>{{ item.what }}</h4>
-								<p>{{ item.notes }}</p>
-							</div>
-						</md-list-item>
-						<md-divider></md-divider>
-						-->
 					<md-subheader class="md-no-sticky">{{ 'subheading1' | translate }}</md-subheader>
 					<md-list-item class="md-3-line md-long-text">
 						<img [src]="educationList[0].flag" class="md-avatar" [alt]="educationList[0].name" />
@@ -97,7 +85,7 @@
 					<th class="md-text-cell">{{ 'history.location' | translate}}</th>
 					<th>{{ 'history.country' | translate}}</th>
 					<th>{{ 'history.from' | translate}}</th>
-					<th class="large-only">{{ 'history.duration' | translate}}</th>
+					<th class="medium-only">{{ 'history.duration' | translate}}</th>
 				</tr>
 			</thead>
 			<tbody>
@@ -105,21 +93,23 @@
 					<td class="md-text-cell">{{ ("history." + item.name)| translate }}</td>
 					<td>{{ ("history." + item.location) | translate }}</td>
 					<td>{{ item.startDate }}</td>
-					<td class="large-only">{{ item.duration }}</td>
+					<td class="medium-only">{{ item.duration }}</td>
 				</tr>
 			</tbody>
 		</md-data-table>
 	</md-card>
 
-	<md-card class="skills-card">
-		<md-content>
+	<md-card>
+		<md-content class="skills-card" id="skills">
 			<md-subheader class="md-no-sticky">{{ 'subheading4' | translate }}</md-subheader>
-			<md-list-item class="md-2-line" *ngFor="#skill of skills; #index = index">
-				<i md-icon *ngIf="index !== 200" [ngClass]="{'md-avatar-icon': index === 200}">grade</i>
-				<div class="md-list-item-text" [ngClass]="{'md-offset': index == 200 }">
-					<h3> {{ skill.name }} </h3>
-				</div>
-			</md-list-item>
+			<div class="flex-container">
+				<md-list-item class="md-2-line hvr-bounce-in" *ngFor="#skill of skills; #index = index">
+					<i md-icon *ngIf="index !== 200" [ngClass]="{'md-avatar-icon': index === 200}">grade</i>
+					<div class="md-list-item-text" [ngClass]="{'md-offset': index == 200 }">
+						<h3> {{ skill.name }} </h3>
+					</div>
+				</md-list-item>
+			</div>
 		</md-content>
 	</md-card>
 

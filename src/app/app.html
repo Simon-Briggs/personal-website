@@ -8,15 +8,23 @@
                     <button md-button (click)="changeLang('en')"><span class="flag-icon flag-icon-gb"></span></button>
                     <button md-button (click)="changeLang('jp')"><span class="flag-icon flag-icon-jp"></span></button>
                 </div>
+                <div class="header-links">
+                    <a md-button href='/#profile' class="small-only">
+                        {{ 'profile' | translate}}
+                    </a><span class="x-large-only"> | </span>
+                    <a md-button href="/#profile" class="x-large-only">
+                        {{ 'downloadCV' | translate}}
+                    </a><span class="x-large-only"> | </span>
+                    <a md-button href="/#skills" class="x-large-only">
+                        {{ 'skills' | translate}}
+                    </a>
                 <!--
-                    <button md-button router-active [routerLink]=" ['Index'] ">
-                        Home
-                    </button>
                     |
                     <button md-button router-active [routerLink]=" ['About'] ">
                         About
                     </button>
                     -->
+                </div>
                 <div class="contact-me">
                 <a href="mailto:simonbriggs@ymail.com?subject=Regarding simonbriggs.website">
                     <button md-fab class="md-primary" aria-label="Contact me">

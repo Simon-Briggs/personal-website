@@ -1,4 +1,7 @@
 {
+	"profile" : "Profile",
+	"downloadCV" : "Download CV",
+	"skills" : "Skills",
 	"changeLanguage": "Select Language:",
 	"name": "SIMON BRIGGS",
 	"title": "Full Stack Web Developer",

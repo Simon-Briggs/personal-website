@@ -11,7 +11,10 @@ md-toolbar:not(.md-menu-toolbar) {
 .content-wrapper {
     min-height: 100%;
     position: relative;
-    background-image: url("/assets/img/bg.jpg");
+    background: url("/assets/img/bg.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
     width:100%;
     background-attachment: fixed;  
@@ -27,7 +30,20 @@ md-toolbar:not(.md-menu-toolbar) {
 }
 .i18n {
   padding-top: 10px;
-  flex: 1 1 auto;
+  flex: 0 1 auto;
+}
+.i18n > .flag-icon {
+    vertical-align: middle;
+}
+.header-links {
+    flex: 1 1 auto;
+    text-align: center;
+    padding-top: 10px;
+}
+@media(min-width: 1200px) {
+    .header-links {
+        margin-left: -340px;
+    }
 }
 .contact-me {
   flex: 0 1 auto;
@@ -94,9 +110,23 @@ md-toolbar li.active {
   background-image: url("/assets/img/jp.svg");
 }
 
-@media (max-width:500px) {
+@media (max-width:600px) {
 	.large-only {
 		display: none;
+		opacity: 0;
+	}
+}
+
+@media (max-width:920px) {
+	.x-large-only {
+		display: none !important;
+		opacity: 0;
+	}
+}
+
+@media (max-width:420px) {
+	.small-only {
+		display: none !important;
 		opacity: 0;
 	}
 }

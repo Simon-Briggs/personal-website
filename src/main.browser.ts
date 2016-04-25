@@ -37,7 +37,7 @@ export function main(initialHmrState?: any): Promise<any> {
         useFactory: (http: Http) => new TranslateStaticLoader(http, 'assets/i18n', '.json'),
         deps: [Http]
     }),
-    MATERIAL_PROVIDERS
+    ...MATERIAL_PROVIDERS
   ])
   .catch(err => console.error(err));
 

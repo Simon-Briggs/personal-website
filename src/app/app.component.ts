@@ -3,7 +3,7 @@
  */
 import {Component, ViewEncapsulation} from 'angular2/core';
 import {RouteConfig, Router} from 'angular2/router';
-import {MATERIAL_DIRECTIVES, MATERIAL_PROVIDERS} from 'ng2-material/all';
+//import {MATERIAL_DIRECTIVES, MATERIAL_PROVIDERS} from 'ng2-material/all';
 
 import {Home} from './home';
 import {AppState} from './app.service';
@@ -35,11 +35,12 @@ export class MyMissingTranslationHandler implements MissingTranslationHandler {
 })
 @RouteConfig([
   { path: '/', name: 'Index', component: Home, useAsDefault: true },
+  { path: '/profile', name: 'Index', component: Home },
+  { path: '/skills', name: 'Index', component: Home },
   // Async load a component using Webpack's require with es6-promise-loader and webpack `require`
   { path: '/about', name: 'About', loader: () => require('es6-promise!./about')('About') }
 ])
 export class App {
-  angularclassLogo = 'assets/img/angularclass-avatar.png';
   name = 'Simon Briggs';
   url = 'simonbriggs.website';
   translate: TranslateService;
