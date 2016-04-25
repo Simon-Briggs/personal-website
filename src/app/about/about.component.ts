@@ -38,12 +38,12 @@ console.log('`About` component loaded asynchronously');
   `
 })
 export class About {
-   value = "value";
-  
+  value = 'value';
+
   constructor(public appState: AppState) {
-    
+
   }
-  
+
   submitState(value) {
     console.log('submitState', value);
     this.appState.set('value', value);

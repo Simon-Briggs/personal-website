@@ -1,3 +1,4 @@
+/*
 import {
   it,
   inject,
@@ -27,3 +28,4 @@ describe('About', () => {
   }));
 
 });
+*/
