@@ -104,8 +104,10 @@
 			<md-subheader class="md-no-sticky">{{ 'subheading4' | translate }}</md-subheader>
 			<div class="flex-container">
 				<md-list-item class="md-2-line hvr-bounce-in" *ngFor="#skill of skills; #index = index">
-					<i md-icon *ngIf="index !== 200" [ngClass]="{'md-avatar-icon': index === 200}">grade</i>
 					<div class="md-list-item-text" [ngClass]="{'md-offset': index == 200 }">
+						<i md-icon *ngIf="index !== 200" [ngClass]="{'md-avatar-icon': index === 200}">grade</i>
+						<i md-icon *ngIf="skill.proficiency > 1">grade</i>
+						<i md-icon *ngIf="skill.proficiency > 2">grade</i>
 						<h3> {{ skill.name }} </h3>
 					</div>
 				</md-list-item>

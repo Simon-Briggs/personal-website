@@ -31,37 +31,40 @@ export class Home {
   todos;
   skills = [{
     'name': 'TypeScript',
-    'proficiency': 1
+    'proficiency': 2
   }, {
       'name': 'JavaScript',
-      'proficiency': 1
+      'proficiency': 3
     }, {
       'name': 'Angular JS',
-      'proficiency': 1
+      'proficiency': 3
     }, {
       'name': 'Angular 2 with Ionic 2',
       'proficiency': 1
     }, {
       'name': 'GIT',
-      'proficiency': 1
+      'proficiency': 2
     }, {
       'name': 'Gulp',
-      'proficiency': 1
+      'proficiency': 2
     }, {
       'name': 'Jenkins',
-      'proficiency': 1
+      'proficiency': 2
+    }, {
+      'name': 'Java EE',
+      'proficiency': 3
     }, {
       'name': 'Webpack',
       'proficiency': 1
     }, {
       'name': 'CSS & SASS',
-      'proficiency': 1
+      'proficiency': 3
     }, {
       'name': 'HTML 5',
-      'proficiency': 1
+      'proficiency': 2
     }, {
       'name': 'Linux & Windows',
-      'proficiency': 1
+      'proficiency': 3
     }];
 
   // TypeScript public modifiers
