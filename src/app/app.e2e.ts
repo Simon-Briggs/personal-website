@@ -25,7 +25,7 @@ describe('App', () => {
 
   it('should have <footer>', () => {
     let subject = element(by.css('app footer')).getText();
-    let result  = 'Copyright 2016';
+    let result  = 'This page\'s source code is available on GITHUB';
     expect(subject).toEqual(result);
   });
 

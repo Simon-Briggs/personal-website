@@ -11,12 +11,11 @@ describe('App', () => {
     let result  = 'Simon Briggs';
     expect(subject).toEqual(result);
   });
-
-  it('should have `Simon Briggs` x-large', () => {
-    let subject = element(by.css('[x-large]')).getText();
-    let result  = 'Simon Briggs';
+  
+  it('should have `Select Language` as first span tag', () => {
+    let subject = element(by.css('span')).getText();
+    let result  = 'Select Language:';
     expect(subject).toEqual(result);
   });
-
 
 });
