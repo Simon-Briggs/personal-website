@@ -9,15 +9,31 @@ md-toolbar:not(.md-menu-toolbar) {
 }
 
 .content-wrapper {
+    background: url("/assets/img/bg.jpg") no-repeat center center fixed;
     min-height: 100%;
     position: relative;
-    background: url("/assets/img/bg.jpg") no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
     width:100%;
     background-attachment: fixed;  
+}
+
+/* Mobile phones don't like fixed images for performance reasons */
+@media (max-width: 500px) {
+    .content-wrapper {
+        background: url("/assets/img/bg-mobile.jpg") no-repeat center center fixed;
+        min-height: 100%;
+        position: relative;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        width:100%;
+        background-attachment: fixed;  
+
+    }
 }
 .header {
     height: 64px;

@@ -3,14 +3,15 @@
 
 # TEAM
 
-  <name> -- <role> -- <twitter>
-
+  <name> -- <role>
+  Simon Briggs -- Developer
+  
 # THANKS
 
   <name>
   PatrickJS -- @gdi2290
   AngularClass -- @AngularClass
-
+  
 # TECHNOLOGY COLOPHON
 
   HTML5, CSS3
