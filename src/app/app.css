@@ -19,6 +19,9 @@ md-toolbar:not(.md-menu-toolbar) {
     width:100%;
     background-attachment: fixed;  
 }
+.header {
+    height: 64px;
+}
 .flex-container {
     display: flex;
     flex-flow: row wrap;
