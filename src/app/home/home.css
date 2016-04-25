@@ -97,3 +97,14 @@ md-card {
 .slanted-image {
   transform: translateZ(.4px) scale(.6) translateX(-104%) translateY(-40%) rotate(-5deg);
 }
+
+.border {
+	border: 1px solid #CCCCCC;
+}
+
+/** IE hacks: */
+@media all and (-ms-high-contrast:none) {
+	.simon-card {
+		height: 400px;
+	}
+}
