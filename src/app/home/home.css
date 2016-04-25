@@ -19,6 +19,12 @@
 	width: 300px;
 	
 }
+@media(min-width: 960px) and ( max-width: 1210px) {
+	.fixed-height-box {
+		height: 215px;
+		overflow:hidden;
+	}
+}
 
 /* Bounce In */
 .hvr-bounce-in {
