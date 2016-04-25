@@ -1,6 +1,7 @@
 /*Format the footer: */
 html, body {
     height: 100%;
+    font-family: RobotoDraft, Roboto, 'Noto Sans Japanese', 'Helvetica Neue', sans-serif;
 }
 
 md-toolbar:not(.md-menu-toolbar) {
