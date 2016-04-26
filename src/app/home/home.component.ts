@@ -30,17 +30,29 @@ export class Home {
   educationList;
   todos;
   skills = [{
-    'name': 'TypeScript',
-    'proficiency': 2
+    'name': 'JavaScript',
+    'proficiency': 3
   }, {
-      'name': 'JavaScript',
-      'proficiency': 3
-    }, {
       'name': 'Angular JS',
       'proficiency': 3
     }, {
-      'name': 'Angular 2 with Ionic 2',
-      'proficiency': 1
+      'name': 'CSS & SASS',
+      'proficiency': 3
+    }, {
+      'name': 'Java EE',
+      'proficiency': 3
+    }, {
+      'name': 'Windows',
+      'proficiency': 3
+    }, {
+      'name': 'Linux ',
+      'proficiency': 2
+    }, {
+      'name': 'HTML 5',
+      'proficiency': 2
+    }, {
+      'name': 'TypeScript',
+      'proficiency': 2
     }, {
       'name': 'GIT',
       'proficiency': 2
@@ -51,20 +63,14 @@ export class Home {
       'name': 'Jenkins',
       'proficiency': 2
     }, {
-      'name': 'Java EE',
-      'proficiency': 3
-    }, {
       'name': 'Webpack',
       'proficiency': 1
     }, {
-      'name': 'CSS & SASS',
-      'proficiency': 3
+      'name': 'Angular 2',
+      'proficiency': 1
     }, {
-      'name': 'HTML 5',
-      'proficiency': 2
-    }, {
-      'name': 'Linux & Windows',
-      'proficiency': 3
+      'name': 'Ionic 2',
+      'proficiency': 1
     }];
 
   // TypeScript public modifiers

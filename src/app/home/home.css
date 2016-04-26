@@ -12,7 +12,7 @@
 }
 .skills-card {
 	overflow: hidden;
-	padding-left: 30px;
+	padding-left: 40px;
 }
 
 .md-2-line {
@@ -29,22 +29,22 @@
 
 /* Bounce In */
 .hvr-bounce-in {
-  display: inline-block;
-  vertical-align: middle;
-  -webkit-transform: translateZ(0);
-  transform: translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-transition-duration: 0.5s;
-  transition-duration: 0.5s;
+	display: inline-block;
+	vertical-align: middle;
+	-webkit-transform: translateZ(0);
+	transform: translateZ(0);
+	box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-transition-duration: 0.5s;
+	transition-duration: 0.5s;
 }
 .hvr-bounce-in:hover, .hvr-bounce-in:focus, .hvr-bounce-in:active {
-  -webkit-transform: scale(1.2);
-  transform: scale(1.2);
-  -webkit-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
-  transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+	-webkit-transform: scale(1.2);
+	transform: scale(1.2);
+	-webkit-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+	transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
 }
 
 .card-container {
@@ -57,9 +57,9 @@
 	position: relative;
 }
 
-@media (min-width: 1400px) {
+@media (min-width: 1200px) {
 	.history-card {
-		max-width: 800px;
+		max-width: 1200px;
 		margin: 8px auto;
 	}
 }
@@ -76,29 +76,53 @@
     flex-flow: row wrap;
 }
 
-/** TODO: maybe attach this event to scrolling
-md-card { 
-	animation-name: skew;
-	animation-duration: 1s;
-} 
- */
-@keyframes skew {
-	from {
-		-webkit-transform: skewX(25deg) skewY(20deg);
-		-moz-transform: skewX(25deg) skewY(20deg);
-		-ms-transform: skewX(25deg) skewY(20deg);
-		-o-transform: skewX(25deg) skewY(20deg);
-		transform: skewX(25deg) skewY(20deg);
-		opacity: 0;
-	}
-	to {
-		-webkit-transform: skewX(0deg) skewY(0deg);
-		-moz-transform: skewX(0deg) skewY(0deg);
-		-ms-transform: skewX(0deg) skewY(0deg);
-		-o-transform: skewX(0deg) skewY(0deg);
-		transform: skewX(0deg) skewY(0deg);
-		opacity: 1;
-	}
+
+
+/* Ripple Out */
+@-webkit-keyframes hvr-ripple-out {
+  100% {
+    top: -12px;
+    right: 0px;
+    bottom: -12px;
+    left: 0px;
+    opacity: 0;
+  }
+}
+
+@keyframes hvr-ripple-out {
+  100% {
+    top: -12px;
+    right: -0px;
+    bottom: -12px;
+    left: 0px;
+    opacity: 0;
+  }
+}
+
+.hvr-ripple-out {
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+}
+.hvr-ripple-out:before {
+  content: '';
+  position: absolute;
+  border: #e1e1e1 solid 6px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+}
+.hvr-ripple-out:hover:before, .hvr-ripple-out:focus:before, .hvr-ripple-out:active:before {
+  -webkit-animation-name: hvr-ripple-out;
+  animation-name: hvr-ripple-out;
 }
 
 .slanted-image {
@@ -113,5 +137,9 @@ md-card {
 @media all and (-ms-high-contrast:none) {
 	.simon-card {
 		height: 400px;
+	}
+	.hvr-bounce-in {
+	}
+	.hvr-bounce-in:hover, .hvr-bounce-in:focus, .hvr-bounce-in:active {
 	}
 }
