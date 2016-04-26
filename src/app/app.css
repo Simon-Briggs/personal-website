@@ -61,11 +61,7 @@ md-toolbar:not(.md-menu-toolbar) {
 }
 .contact-me {
   flex: 0 1 auto;
-}
-@media (min-width: 600px) {
-    .contact-me {    
-      padding-top:3px;
-    }
+  padding-top:3px;
 }
 
 .body {
