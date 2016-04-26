@@ -4,8 +4,15 @@ html, body {
     font-family: RobotoDraft, Roboto, 'Noto Sans Japanese', 'Helvetica Neue', sans-serif;
 }
 
+@font-face {
+    font-family: handWritten;
+    src: url("/assets/fonts/adamwarrenpro.ttf");
+}
+.hand-written {
+    font-family: handWritten;
+}
 md-toolbar:not(.md-menu-toolbar) {
-    background-color: #477696 !important;
+    background:none;
 }
 
 .content-wrapper {
@@ -32,15 +39,17 @@ md-toolbar:not(.md-menu-toolbar) {
 }
 .header {
     height: 64px;
+    background-color: transparent !important;
 }
 .flex-container {
     display: flex;
     flex-flow: row wrap;
 }
 .choose-language {
+    padding-top: 23px;
     margin-left: 20px;
     display: inline-block;
-    width: 170px;
+    width: 100px;
 }
 .i18n {
   padding-top: 10px;
@@ -56,7 +65,7 @@ md-toolbar:not(.md-menu-toolbar) {
 }
 @media(min-width: 1200px) {
     .header-links {
-        margin-left: -340px;
+        margin-left: -300px;
     }
 }
 .contact-me {

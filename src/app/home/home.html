@@ -1,11 +1,11 @@
 <div class="title-banner">
-	<span class="md-display-3">{{ 'name' | translate}}</span>
+	<span class="md-display-3 hand-written">{{ 'name' | translate}}</span>
 </div>
 <div class="title-banner">
-	<span class="md-display-2 ">{{ 'title' | translate}}</span>
+	<span class="md-display-2 hand-written">{{ 'title' | translate}}</span>
 </div>
 
-<md-card id="profile" class="simon-card" md-theme="default" md-theme-watch>
+<md-card id="profile" class="simon-card hvr-ripple-out" md-theme="default" md-theme-watch>
 	<md-card-title>
 		<md-card-title-text flex="100" layout="column" layout-wrap layout-align="left start">
 			<span class="md-headline">{{ 'name' | translate}}</span>
@@ -107,6 +107,7 @@
 					<div class="md-list-item-text" [ngClass]="{'md-offset': index == 200 }">
 						<i md-icon *ngIf="index !== 200" [ngClass]="{'md-avatar-icon': index === 200}">grade</i>
 						<i md-icon *ngIf="skill.proficiency > 1">grade</i>
+						<md-icon md-font-icon="grade"></md-icon>
 						<i md-icon *ngIf="skill.proficiency > 2">grade</i>
 						<h3> {{ skill.name }} </h3>
 					</div>

@@ -3,8 +3,8 @@
     <header>
         <md-toolbar class="header">
             <nav class="flex-container">
+                <div class="md-caption choose-language large-only"> {{ 'changeLanguage' | translate }}</div>
                 <div class="i18n">
-                    <span class="choose-language large-only"> {{ 'changeLanguage' | translate }}</span>
                     <button md-button (click)="changeLang('en')"><span class="flag-icon flag-icon-gb"></span></button>
                     <button md-button (click)="changeLang('jp')"><span class="flag-icon flag-icon-jp"></span></button>
                 </div>
@@ -18,19 +18,13 @@
                     <a md-button href="/#skills" class="x-large-only">
                         {{ 'skills' | translate}}
                     </a>
-                <!--
-                    |
-                    <button md-button router-active [routerLink]=" ['About'] ">
-                        About
-                    </button>
-                    -->
                 </div>
                 <div class="contact-me">
-                <a href="mailto:simonbriggs@ymail.com?subject=Regarding simonbriggs.website">
-                    <button md-fab class="md-primary" aria-label="Contact me">
+                    <a href="mailto:simonbriggs@ymail.com?subject=Regarding simonbriggs.website">
+                        <button md-fab class="md-primary" aria-label="Contact me">
                     <i md-icon>comment</i>
                 </button>
-                </a>
+                    </a>
                 </div>
             </nav>
         </md-toolbar>

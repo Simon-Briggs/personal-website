@@ -71,6 +71,9 @@ export class Home {
     }, {
       'name': 'Ionic 2',
       'proficiency': 1
+    }, {
+      'name': 'Node JS',
+      'proficiency': 1
     }];
 
   // TypeScript public modifiers

@@ -48,8 +48,8 @@
 }
 
 .card-container {
-	background: rgb(71,118,150);
-	background: rgba(71,118,150,0.9);
+	background: rgb(47, 175, 150);
+	background: rgba(47, 175, 150, 0.5);
 	margin-top: -200px;
 	padding-top: 200px;
 	padding-bottom: 8px;
@@ -126,7 +126,7 @@
 }
 
 .slanted-image {
-  transform: translateZ(.4px) scale(.6) translateX(-104%) translateY(-40%) rotate(-5deg);
+  transform:  rotate(5deg);
 }
 
 .border {
@@ -138,6 +138,7 @@
 	.simon-card {
 		height: 400px;
 	}
+	//TODO: disable these on IE?
 	.hvr-bounce-in {
 	}
 	.hvr-bounce-in:hover, .hvr-bounce-in:focus, .hvr-bounce-in:active {
