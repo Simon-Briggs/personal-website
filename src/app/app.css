@@ -26,13 +26,8 @@ md-toolbar:not(.md-menu-toolbar) {
         background: url("/assets/img/bg-mobile.jpg") no-repeat;
         min-height: 100%;
         position: relative;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
+        background-size: inherit;
         width:100%;
-        background-attachment: fixed;  
-
     }
 }
 .header {
