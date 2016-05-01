@@ -5,26 +5,31 @@
 	"changeLanguage": "言語を選択:",
 	"name": "竹中　聡司",
 	"title": "フルスタック ソフトウェアエンジニア",
-	"aboutMe": "アジャイル開発とモダンな言語を生かしたいソフトウェア工学者",
+	"aboutMe": "アジャイル開発とモダンな言語を駆使できるソフトウェアデベロッパー",
 	"download": "履歴書をダウンロード(.PDF)",
 	"downloadText": "テキストファイルとしてダウンロード",
 	"viewGithub": "このページのソースコードを見る",
-	"subheading1": "情報工学",
-	"subheading2": "前",
+	"subheading1": "ウェブ開発系",
+	"subheading2": "その他関与したプロジェクト",
 	"subheading3": "大学",
 	"subheading4": "スキル",
-	"description1": "４人のチームでアジァイルなウェブプログラミング",
-	"description2": "JavaとPerlを使ったテストのオートメーション",
-	"description3": "日本語と英語の両方で電子と情報理工学を学んだ",
+	"description1": "４人のチームでUIをアジァイル開発",
+	"description2": "JavaやPerlを使ったテストのオートメーション",
+	"description3": "ノッティンガム大学の電子及び情報工学科の学位履修に際し、１年間早稲田大学に交換留学、早稲田の基幹理工学部情報通信学科に在籍、日英での大学生活を体験",
 	"history": { 
 		"IBM":"IBM",
 		"Waseda": "早稲田大学",
 		"Nottingham": "ノッティンガム大学",
+		"length": {
+			"IBM" : "現在に至る",
+			"Waseda" : 1,
+			"Nottingham" : 3
+		},
 		"UK": "イギリス",
 		"Japan": "日本",
-		"location": "場所",
+		"location": "学校・会社",
 		"country" : "国",
-		"from" : "年",
-		"duration": "居た長さ"
+		"from" : "入学・入社年",
+		"duration": "年数"
 	}
 }

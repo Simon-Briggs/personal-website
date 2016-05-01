@@ -2,6 +2,8 @@ import {Component} from 'angular2/core';
 import {Title} from './title';
 import {XLarge} from './x-large';
 import {AppState} from '../app.service';
+import {TranslateService} from 'ng2-translate/ng2-translate';
+
 
 @Component({
   // The selector is what angular internally uses
@@ -75,10 +77,9 @@ export class Home {
       'name': 'Node JS',
       'proficiency': 1
     }];
-
+    
   // TypeScript public modifiers
-  constructor(public appState: AppState, public title: Title) {
-
+  constructor(public appState: AppState, public title: Title, translate : TranslateService) {
     this.educationList = [{
       name: 'IBM',
       flag: '/assets/img/gb.svg',

@@ -1,7 +1,24 @@
 .title-banner {
-	margin: 20vh auto 30vh auto;
+	margin: 20vh auto 20vh auto;
 	text-align: center;
 	color: white;
+}
+.down-arrow {
+	height: 100px;
+	margin-top: -100px;
+	color: rgb(63,81,181);
+}
+.down-arrow-icon {
+	font-size: 100px;
+	animation: 	bounce 2s infinite alternate;
+}
+@keyframes bounce {
+	from {
+		transform: translateY(0);
+	}
+	to {
+		transform: translateY(50px);
+	}
 }
 
 .simon-card {
@@ -20,9 +37,9 @@
 	width: 300px;
 	
 }
-@media(min-width: 960px) and ( max-width: 1210px) {
+@media(min-width: 960px) and ( max-width: 1280px) {
 	.fixed-height-box {
-		height: 215px;
+		height: 225px;
 		overflow:hidden;
 	}
 }

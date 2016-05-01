@@ -20,6 +20,11 @@
 		"IBM":"IBM",
 		"Waseda": "Waseda University",
 		"Nottingham": "University of Nottingham",
+		"length": {
+			"IBM" : "Current",
+			"Waseda" : 1,
+			"Nottingham" : 3
+		},
 		"UK": "UK",
 		"Japan": "Japan",
 		"location": "Location",

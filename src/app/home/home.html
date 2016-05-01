@@ -5,6 +5,8 @@
 	<span class="md-display-2 hand-written">{{ 'title' | translate}}</span>
 </div>
 
+<div class="title-banner down-arrow"><i md-icon class="down-arrow-icon">keyboard_arrow_down</i></div>
+
 <md-card id="profile" class="simon-card hvr-ripple-out" md-theme="default" md-theme-watch>
 	<md-card-title>
 		<md-card-title-text flex="100" layout="column" layout-wrap layout-align="left start">
@@ -66,7 +68,6 @@
 					<md-list-item class="md-3-line md-long-text">
 						<img [src]="educationList[1].flag" class="md-avatar border" [alt]="educationList[1].name" />
 						<div class="md-list-item-text">
-							<h3>{{ ("history." + educationList[1].name) | translate }}</h3>
 							<p>
 								{{ 'description3' | translate }}
 							</p>
@@ -93,7 +94,7 @@
 					<td class="md-text-cell">{{ ("history." + item.name)| translate }}</td>
 					<td>{{ ("history." + item.location) | translate }}</td>
 					<td>{{ item.startDate }}</td>
-					<td class="medium-only">{{ item.duration }}</td>
+					<td class="medium-only">{{ ("history.length." + item.name) | translate }}</td>
 				</tr>
 			</tbody>
 		</md-data-table>

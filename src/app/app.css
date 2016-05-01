@@ -30,7 +30,7 @@ md-toolbar:not(.md-menu-toolbar) {
 /* Mobile phones don't like fixed images for performance reasons */
 @media (max-width: 640px) {
     .content-wrapper {
-        background: url("/assets/img/bg-mobile.jpg") no-repeat;
+        //background: url("/assets/img/bg-mobile.jpg") no-repeat;
         min-height: 100%;
         position: relative;
         background-size: inherit;
