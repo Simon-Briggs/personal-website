@@ -1,13 +1,13 @@
 <div class="title-banner">
-	<span class="md-display-3 hand-written">{{ 'name' | translate}}</span>
+	<span class="md-display-3 font--hand-written">{{ 'name' | translate}}</span>
 </div>
 <div class="title-banner">
-	<span class="md-display-2 hand-written">{{ 'title' | translate}}</span>
+	<span class="md-display-2 font--hand-written">{{ 'title' | translate}}</span>
 </div>
 
-<div class="title-banner down-arrow"><i md-icon class="down-arrow-icon">keyboard_arrow_down</i></div>
+<div class="title-banner container--down-arrow"><i md-icon class="icon--down-arrow">keyboard_arrow_down</i></div>
 
-<md-card id="profile" class="simon-card hvr-ripple-out" md-theme="default" md-theme-watch>
+<md-card id="profile" class="card--main animation--hover--ripple-out" md-theme="default" md-theme-watch>
 	<md-card-title>
 		<md-card-title-text flex="100" layout="column" layout-wrap layout-align="left start">
 			<span class="md-headline">{{ 'name' | translate}}</span>
@@ -20,16 +20,16 @@
 	</md-card-title>
 	<md-card-actions layout-xs="column" layout-align-xs="start" layout="row" layout-align="end center">
 		<a href="/assets/cv/Simon Briggs CV April 2016.pdf" target="_blank" md-raised-button class="md-primary">{{ 'download' | translate}}</a>
-		<a href="/assets/cv/Simon Briggs CV April 2016 Transcript.txt" target="_blank" md-raised-button class="">{{ 'downloadText' | translate}}</a> 
+		<a href="/assets/cv/Simon Briggs CV April 2016 Transcript.txt" target="_blank" md-raised-button class="">{{ 'downloadText' | translate}}</a>
 	</md-card-actions>
 </md-card>
 
-<div class="card-container">
-	<div class="flex-container">
+<div class="card-container--card">
+	<div class="container--flex">
 
 		<div flex-gt-md=33 flex-md=50 flex=100>
-			<md-card class="hvr-ripple-out">
-				<md-content class="fixed-height-box">
+			<md-card class="animation--hover--ripple-out">
+				<md-content class="card--fixed-height">
 					<md-subheader class="md-no-sticky">{{ 'subheading1' | translate }}</md-subheader>
 					<md-list-item class="md-3-line md-long-text">
 						<img [src]="educationList[0].flag" class="md-avatar" [alt]="educationList[0].name" />
@@ -45,8 +45,8 @@
 		</div>
 
 		<div flex-gt-md=33 flex-md=50 flex=100>
-			<md-card class="hvr-ripple-out">
-				<md-content class="fixed-height-box">
+			<md-card class="animation--hover--ripple-out">
+				<md-content class="card--fixed-height">
 					<md-subheader class="md-no-sticky">{{ 'subheading2' | translate }}</md-subheader>
 					<md-list-item class="md-3-line md-long-text">
 						<img [src]="educationList[0].flag" class="md-avatar" [alt]="educationList[0].name" />
@@ -62,11 +62,11 @@
 		</div>
 
 		<div flex-gt-md=33 flex-md=100 flex=100>
-			<md-card class="hvr-ripple-out">
-				<md-content class="fixed-height-box">
+			<md-card class="animation--hover--ripple-out">
+				<md-content class="card--fixed-height">
 					<md-subheader class="md-no-sticky">{{ 'subheading3' | translate }}</md-subheader>
 					<md-list-item class="md-3-line md-long-text">
-						<img [src]="educationList[1].flag" class="md-avatar border" [alt]="educationList[1].name" />
+						<img [src]="educationList[1].flag" class="md-avatar solid-border" [alt]="educationList[1].name" />
 						<div class="md-list-item-text">
 							<p>
 								{{ 'description3' | translate }}
@@ -79,14 +79,14 @@
 	</div>
 
 
-	<md-card class="history-card" layout="row">
+	<md-card class="card--history" layout="row">
 		<md-data-table>
 			<thead>
 				<tr>
 					<th class="md-text-cell">{{ 'history.location' | translate}}</th>
 					<th>{{ 'history.country' | translate}}</th>
 					<th>{{ 'history.from' | translate}}</th>
-					<th class="medium-only">{{ 'history.duration' | translate}}</th>
+					<th class="med-only">{{ 'history.duration' | translate}}</th>
 				</tr>
 			</thead>
 			<tbody>
@@ -94,17 +94,17 @@
 					<td class="md-text-cell">{{ ("history." + item.name)| translate }}</td>
 					<td>{{ ("history." + item.location) | translate }}</td>
 					<td>{{ item.startDate }}</td>
-					<td class="medium-only">{{ ("history.length." + item.name) | translate }}</td>
+					<td class="med-only">{{ ("history.length." + item.name) | translate }}</td>
 				</tr>
 			</tbody>
 		</md-data-table>
 	</md-card>
 
 	<md-card>
-		<md-content class="skills-card" id="skills">
+		<md-content class="card--skills" id="skills">
 			<md-subheader class="md-no-sticky">{{ 'subheading4' | translate }}</md-subheader>
 			<div class="flex-container">
-				<md-list-item class="md-2-line hvr-bounce-in" *ngFor="#skill of skills; #index = index">
+				<md-list-item class="md-2-line animation--hover--bounce-in" *ngFor="#skill of skills; #index = index">
 					<div class="md-list-item-text" [ngClass]="{'md-offset': index == 200 }">
 						<i md-icon *ngIf="index !== 200" [ngClass]="{'md-avatar-icon': index === 200}">grade</i>
 						<i md-icon *ngIf="skill.proficiency > 1">grade</i>

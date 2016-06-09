@@ -22,7 +22,7 @@ describe('x-large directive', () => {
   })
   class TestComponent {}
 
-  it('should sent font-size to x-large', injectAsync([TestComponentBuilder], (tcb) => {
+  it('should set font-size to x-large', injectAsync([TestComponentBuilder], (tcb) => {
     return tcb.overrideTemplate(TestComponent, '<div x-large>Content</div>')
       .createAsync(TestComponent).then((fixture: any) => {
         fixture.detectChanges();

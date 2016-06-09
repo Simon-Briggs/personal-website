@@ -4,22 +4,22 @@
         <md-toolbar class="header">
             <nav class="flex-container">
                 <div class="md-caption choose-language large-only"> {{ 'changeLanguage' | translate }}</div>
-                <div class="i18n">
+                <div class="header--i18n">
                     <button md-button (click)="changeLang('en')"><span class="flag-icon flag-icon-gb"></span></button>
                     <button md-button (click)="changeLang('jp')"><span class="flag-icon flag-icon-jp"></span></button>
                 </div>
-                <div class="header-links">
+                <div class="header--links">
                     <a md-button href='/#profile' class="small-only">
-                        {{ 'profile' | translate}}
+                        {{ 'profile' | translate }}
                     </a><span class="x-large-only"> | </span>
                     <a md-button href="/#profile" class="x-large-only">
-                        {{ 'downloadCV' | translate}}
+                        {{ 'downloadCV' | translate }}
                     </a><span class="x-large-only"> | </span>
                     <a md-button href="/#skills" class="x-large-only">
-                        {{ 'skills' | translate}}
+                        {{ 'skills' | translate }}
                     </a>
                 </div>
-                <div class="contact-me">
+                <div class="header--contact-me">
                     <a href="mailto:simonbriggs@ymail.com?subject=Regarding simonbriggs.website">
                         <button md-fab class="md-primary" aria-label="Contact me">
                     <i md-icon>comment</i>
@@ -36,7 +36,7 @@
 
 
     <footer class="footer">
-        {{'viewGithub' | translate}}
+        {{ 'viewGithub' | translate }}
         <a md-button target="_blank" href="https://github.com/Simon-Briggs/personal-website">Github</a>
         <br />
     </footer>

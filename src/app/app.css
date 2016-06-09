@@ -8,7 +8,8 @@ html, body {
     font-family: handWritten;
     src: url("/assets/fonts/adamwarrenpro.ttf");
 }
-.hand-written {
+
+.font--hand-written {
     font-family: handWritten;
 }
 md-toolbar:not(.md-menu-toolbar) {
@@ -30,7 +31,6 @@ md-toolbar:not(.md-menu-toolbar) {
 /* Mobile phones don't like fixed images for performance reasons */
 @media (max-width: 640px) {
     .content-wrapper {
-        //background: url("/assets/img/bg-mobile.jpg") no-repeat;
         min-height: 100%;
         position: relative;
         background-size: inherit;
@@ -51,24 +51,24 @@ md-toolbar:not(.md-menu-toolbar) {
     display: inline-block;
     width: 100px;
 }
-.i18n {
+.header--i18n {
   padding-top: 10px;
   flex: 0 1 auto;
 }
-.i18n > .flag-icon {
+.header--i18n > .flag-icon {
     vertical-align: middle;
 }
-.header-links {
+.header--links {
     flex: 1 1 auto;
     text-align: center;
     padding-top: 10px;
 }
 @media(min-width: 1200px) {
-    .header-links {
+    .header--links {
         margin-left: -300px;
     }
 }
-.contact-me {
+.header--contact-me {
   flex: 0 1 auto;
   padding-top:3px;
 }

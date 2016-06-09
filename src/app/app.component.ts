@@ -37,8 +37,6 @@ export class MyMissingTranslationHandler implements MissingTranslationHandler {
   { path: '/', name: 'Index', component: Home, useAsDefault: true },
   { path: '/profile', name: 'Index', component: Home },
   { path: '/skills', name: 'Index', component: Home },
-  // Async load a component using Webpack's require with es6-promise-loader and webpack `require`
-  { path: '/about', name: 'About', loader: () => require('es6-promise!./about')('About') }
 ])
 export class App {
   name = 'Simon Briggs';

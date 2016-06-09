@@ -3,16 +3,16 @@
 	text-align: center;
 	color: white;
 }
-.down-arrow {
+.container--down-arrow {
 	height: 100px;
 	margin-top: -100px;
 	color: rgb(63,81,181);
 }
-.down-arrow-icon {
+.icon--down-arrow {
 	font-size: 100px;
-	animation: 	bounce 2s infinite alternate;
+	animation: 	animation--bounce 2s infinite alternate;
 }
-@keyframes bounce {
+@keyframes animation--bounce {
 	from {
 		transform: translateY(0);
 	}
@@ -21,13 +21,13 @@
 	}
 }
 
-.simon-card {
+.card--main {
 	max-width: 600px;
 	margin: 8px auto;
 	z-index: 1;
 	position: relative;
 }
-.skills-card {
+.card--skills {
 	overflow: hidden;
 	padding-left: 40px;
 }
@@ -38,14 +38,14 @@
 	
 }
 @media(min-width: 960px) and ( max-width: 1280px) {
-	.fixed-height-box {
+	.card--fixed-height {
 		height: 225px;
 		overflow:hidden;
 	}
 }
 
 /* Bounce In */
-.hvr-bounce-in {
+.animation--hover--bounce-in {
 	display: inline-block;
 	vertical-align: middle;
 	-webkit-transform: translateZ(0);
@@ -57,14 +57,14 @@
 	-webkit-transition-duration: 0.5s;
 	transition-duration: 0.5s;
 }
-.hvr-bounce-in:hover, .hvr-bounce-in:focus, .hvr-bounce-in:active {
+.animation--hover--bounce-in:hover, .animation--hover--bounce-in:focus, .animation--hover--bounce-in:active {
 	-webkit-transform: scale(1.2);
 	transform: scale(1.2);
 	-webkit-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
 	transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
 }
 
-.card-container {
+.container--card {
 	background: rgb(47, 175, 150);
 	background: rgba(47, 175, 150, 0.5);
 	margin-top: -200px;
@@ -75,28 +75,32 @@
 }
 
 @media (min-width: 1200px) {
-	.history-card {
+	.card--history {
 		max-width: 1200px;
 		margin: 8px auto;
 	}
 }
 
 @media (max-width:500px) {
-	.medium-only {
+	.med-only {
 		display: none;
 		opacity: 0;
 	}
 }
 
-.flex-container {
+.container--flex {
     display: flex;
     flex-flow: row wrap;
 }
 
 
+.solid-border {
+	border: 1px solid #CCCCCC;
+}
+
 
 /* Ripple Out */
-@-webkit-keyframes hvr-ripple-out {
+@-webkit-keyframes animation--hover--ripple-out {
   100% {
     top: -12px;
     right: 0px;
@@ -105,8 +109,7 @@
     opacity: 0;
   }
 }
-
-@keyframes hvr-ripple-out {
+@keyframes animation--hover--ripple-out {
   100% {
     top: -12px;
     right: -0px;
@@ -115,8 +118,7 @@
     opacity: 0;
   }
 }
-
-.hvr-ripple-out {
+.animation--hover--ripple-out {
   vertical-align: middle;
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
@@ -126,7 +128,7 @@
   -moz-osx-font-smoothing: grayscale;
   position: relative;
 }
-.hvr-ripple-out:before {
+.animation--hover--ripple-out:before {
   content: '';
   position: absolute;
   border: #e1e1e1 solid 6px;
@@ -137,27 +139,14 @@
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
 }
-.hvr-ripple-out:hover:before, .hvr-ripple-out:focus:before, .hvr-ripple-out:active:before {
-  -webkit-animation-name: hvr-ripple-out;
-  animation-name: hvr-ripple-out;
-}
-
-.slanted-image {
-  transform:  rotate(5deg);
-}
-
-.border {
-	border: 1px solid #CCCCCC;
+.animation--hover--ripple-out:hover:before, .animation--hover--ripple-out:focus:before, .animation--hover--ripple-out:active:before {
+  -webkit-animation-name: animation--hover--ripple-out;
+  animation-name: animation--hover--ripple-out;
 }
 
 /** IE hacks: */
 @media all and (-ms-high-contrast:none) {
-	.simon-card {
+	.card--main {
 		height: 400px;
-	}
-	//TODO: disable these on IE?
-	.hvr-bounce-in {
-	}
-	.hvr-bounce-in:hover, .hvr-bounce-in:focus, .hvr-bounce-in:active {
 	}
 }
