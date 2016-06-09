@@ -1,3 +1,1 @@
-before_script:
-  - npm install gulp
-script: gulp
+script: npm run build:prod
