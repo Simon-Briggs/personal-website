@@ -1,1 +1,3 @@
-script: npm run build:prod
+script: 
+	- npm run test
+	- npm run build:prod

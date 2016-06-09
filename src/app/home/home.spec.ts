@@ -10,6 +10,7 @@ import {
 import {Component, provide} from 'angular2/core';
 import {BaseRequestOptions, Http} from 'angular2/http';
 import {MockBackend} from 'angular2/http/testing';
+import {TranslateService, TranslatePipe, TranslateLoader} from 'ng2-translate/ng2-translate';
 
 // Load the implementations that should be tested
 import {Home} from './home.component';
@@ -27,7 +28,9 @@ describe('Home', () => {
       },
       deps: [MockBackend, BaseRequestOptions]
     }),
-
+    TranslateService,
+    TranslatePipe,
+    TranslateLoader,
     AppState,
     Title,
     Home
